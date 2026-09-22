@@ -1,0 +1,113 @@
+"use client";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { Building2, QrCode, Wallet, CreditCard, Sparkles, ArrowRight, Check } from "lucide-react";
+
+const solutions = [
+  {
+    id: "va",
+    title: "Virtual Account Multi-Bank",
+    icon: <Building2 className="w-6 h-6 text-blue-600" />,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rekening Virtual otomatis untuk BCA, Mandiri, BNI, BRI, Permata.",
+    features: ["Konfirmasi instan", "Fitur refund otomatis", "Expired time dapat diatur"],
+    link: "/payments",
+  },
+  {
+    id: "qris",
+    title: "QRIS Instant Dynamic & Static",
+    icon: <QrCode className="w-6 h-6 text-indigo-600" />,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satu QR Code nasional untuk m-banking & seluruh e-wallet.",
+    features: ["Mendukung 30+ aplikasi", "Settlement H+0", "Notifikasi webhook cepat"],
+    link: "/payments",
+  },
+  {
+    id: "ewallet",
+    title: "E-Wallet Direct Checkout",
+    icon: <Wallet className="w-6 h-6 text-sky-600" />,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integrasi GoPay, OVO, ShopeePay, DANA, LinkAja.",
+    features: ["Auto app redirect", "Tingkat sukses 99.8%", "Multi-currency ready"],
+    link: "/payments",
+  },
+  {
+    id: "card",
+    title: "Kartu Kredit & International Pay",
+    icon: <CreditCard className="w-6 h-6 text-emerald-600" />,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Terima Visa, Mastercard, JCB dengan 3D Secure 2.0.",
+    features: ["Deteksi fraud cerdas", "Recurring subscription", "Tokenisasi data aman"],
+    link: "/payments",
+  },
+];
+
+export default function PaymentSolutions() {
+  const [activeTab, setActiveTab] = useState("va");
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <AnimateOnScroll animation="fade-up">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">
+              <Sparkles className="w-3.5 h-3.5 text-blue-600" /> Solusi Pembayaran Moduler
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+              Satu API untuk Semua <span className="text-blue-600">Metode Pembayaran</span>
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bangun alur pembayaran terbaik untuk web, aplikasi mobile, maupun link pembayaran manual.
+            </p>
+          </div>
+        </AnimateOnScroll>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {solutions.map((item, idx) => (
+            <AnimateOnScroll key={item.id} animation="fade-up" delay={idx * 100}>
+              <div
+                onMouseEnter={() => setActiveTab(item.id)}
+                className={`h-full p-8 rounded-2xl border transition-all duration-300 flex flex-col justify-between cursor-pointer group ${
+                  activeTab === item.id
+                    ? "bg-gradient-to-b from-blue-50/70 via-white to-white border-blue-400 shadow-xl shadow-blue-500/10 -translate-y-1"
+                    : "bg-white border-gray-200 hover:border-blue-300 hover:shadow-md"
+                }`}
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-blue-100/60 border border-blue-200/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                    {item.description}
+                  </p>
+
+                  <ul className="space-y-2 mb-8">
+                    {item.features.map((feat) => (
+                      <li key={feat} className="flex items-center gap-2 text-xs font-medium text-gray-700">
+                        <Check className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <Link
+                  href={item.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 group/link"
+                >
+                  Pelajari Selengkapnya
+                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </AnimateOnScroll>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+}
