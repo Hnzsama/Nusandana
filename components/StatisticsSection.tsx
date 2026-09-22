@@ -6,14 +6,14 @@ import { TrendingUp, Users, ShieldCheck, Clock, Sparkles } from "lucide-react";
 
 const stats = [
   {
-    icon: <TrendingUp className="w-6 h-6 text-blue-600 group-hover:scale-110 transition-transform" />,
-    iconBg: "bg-blue-50 border-blue-100/80",
+    icon: <TrendingUp className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
+    iconBg: "bg-red-50 border-red-100/80",
     value: "Rp 50 Triliun+",
     label: "Total Volume Transaksi Tahunan",
     description: "Diproses secara aman & transparan melalui jaringan Nusandana.",
   },
   {
-    icon: <Users className="w-6 h-6 text-indigo-600 group-hover:scale-110 transition-transform" />,
+    icon: <Users className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-indigo-50 border-indigo-100/80",
     value: "500.000+",
     label: "Merchant & UMKM Aktif",
@@ -43,11 +43,11 @@ export default function StatisticsSection() {
         {/* Section Header */}
         <AnimateOnScroll animation="fade-up">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-red-600 text-xs font-bold uppercase tracking-wider mb-3">
               <Sparkles className="w-3.5 h-3.5" /> Skalabilitas & Performa
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
-              Infrastruktur Keuangan dengan <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Performa Tinggi</span>
+              Infrastruktur Keuangan dengan <span className="bg-gradient-to-r from-red-600 to-red-600 bg-clip-text text-transparent">Performa Tinggi</span>
             </h2>
             <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dirancang untuk skalabilitas transaksi tinggi tanpa kompromi.
@@ -59,10 +59,10 @@ export default function StatisticsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {stats.map((stat, idx) => (
             <AnimateOnScroll key={stat.label} animation="fade-up" delay={idx * 80} className="h-full">
-              <div className="h-full bg-white p-7 rounded-3xl border border-gray-200/90 shadow-xs hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+              <div className="h-full bg-white p-7 rounded-3xl border border-gray-200/90 shadow-xs hover:border-red-400 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
                 
                 {/* Top Corner Glow */}
-                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl from-red-50 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 <div className="relative z-10">
                   {/* Icon Box */}
@@ -71,7 +71,7 @@ export default function StatisticsSection() {
                   </div>
 
                   {/* Value */}
-                  <h3 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight mb-2 group-hover:text-red-600 transition-colors">
                     {stat.value}
                   </h3>
 

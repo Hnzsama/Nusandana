@@ -54,7 +54,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group cursor-pointer">
-          <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+          <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-bold shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
             <svg
               className="w-6 h-6 fill-current"
               viewBox="0 0 24 24"
@@ -64,7 +64,7 @@ export default function Navbar() {
             </svg>
           </div>
           <span className="text-2xl font-black tracking-tight text-gray-900">
-            Nusan<span className="text-blue-600">dana</span>
+            Nusan<span className="text-red-600">dana</span>
           </span>
         </Link>
 
@@ -72,7 +72,7 @@ export default function Navbar() {
         <nav className="hidden lg:flex items-center gap-1 font-semibold text-sm text-gray-700">
           <Link
             href="/"
-            className="px-3.5 py-2 rounded-lg hover:text-blue-600 hover:bg-blue-50/50 transition-colors cursor-pointer"
+            className="px-3.5 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
           >
             Beranda
           </Link>
@@ -86,11 +86,11 @@ export default function Navbar() {
             >
               <Link
                 href={item.href}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg hover:text-blue-600 hover:bg-blue-50/50 transition-colors cursor-pointer"
+                className="flex items-center gap-1 px-3.5 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
               >
                 {item.label}
                 {item.hasDropdown && (
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180 text-blue-600" : "text-gray-400"}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180 text-red-600" : "text-gray-400"}`} />
                 )}
               </Link>
 
@@ -101,7 +101,7 @@ export default function Navbar() {
                       key={subItem.name}
                       href={subItem.href}
                       onClick={() => setActiveDropdown(null)}
-                      className="block px-3 py-2 text-xs font-semibold text-gray-700 hover:text-blue-600 hover:bg-blue-50/70 rounded-xl transition-colors cursor-pointer"
+                      className="block px-3 py-2 text-xs font-semibold text-gray-700 hover:text-red-600 hover:bg-red-50/70 rounded-xl transition-colors cursor-pointer"
                     >
                       {subItem.name}
                     </Link>
@@ -116,13 +116,13 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             href="/kontak"
-            className="px-4 py-2.5 rounded-xl border border-blue-600 text-blue-600 font-bold text-sm hover:bg-blue-50 transition-all cursor-pointer"
+            className="px-4 py-2.5 rounded-xl border border-red-600 text-red-600 font-bold text-sm hover:bg-red-50 transition-all cursor-pointer"
           >
             Hubungi Kami
           </Link>
           <Link
             href="/payments"
-            className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 transition-all flex items-center gap-1.5 cursor-pointer"
+            className="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm shadow-md shadow-red-600/30 hover:shadow-lg hover:shadow-red-600/40 transition-all flex items-center gap-1.5 cursor-pointer"
           >
             Mulai <ArrowRight className="w-4 h-4" />
           </Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
             <div key={item.label} className="border-b border-gray-100 pb-2">
               <Link
                 href={item.href}
-                className="font-bold text-gray-900 block py-1.5 hover:text-blue-600"
+                className="font-bold text-gray-900 block py-1.5 hover:text-red-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
@@ -164,7 +164,7 @@ export default function Navbar() {
                     <Link
                       key={sub.name}
                       href={sub.href}
-                      className="block py-1 text-xs text-gray-600 hover:text-blue-600 cursor-pointer"
+                      className="block py-1 text-xs text-gray-600 hover:text-red-600 cursor-pointer"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {sub.name}
@@ -178,14 +178,14 @@ export default function Navbar() {
           <div className="pt-2 flex flex-col gap-2">
             <Link
               href="/kontak"
-              className="w-full text-center py-2.5 rounded-xl border border-blue-600 text-blue-600 font-bold text-sm cursor-pointer"
+              className="w-full text-center py-2.5 rounded-xl border border-red-600 text-red-600 font-bold text-sm cursor-pointer"
               onClick={() => setMobileMenuOpen(false)}
             >
               Hubungi Kami
             </Link>
             <Link
               href="/payments"
-              className="w-full text-center py-2.5 rounded-xl bg-blue-600 text-white font-bold text-sm flex items-center justify-center gap-1 cursor-pointer"
+              className="w-full text-center py-2.5 rounded-xl bg-red-600 text-white font-bold text-sm flex items-center justify-center gap-1 cursor-pointer"
               onClick={() => setMobileMenuOpen(false)}
             >
               Mulai <ArrowRight className="w-4 h-4" />

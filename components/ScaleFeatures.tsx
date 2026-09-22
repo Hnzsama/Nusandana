@@ -6,12 +6,12 @@ import { Cpu, RefreshCw, BarChart3, Layers, CheckCircle } from "lucide-react";
 
 const scaleItems = [
   {
-    icon: <Cpu className="w-6 h-6 text-blue-600" />,
+    icon: <Cpu className="w-6 h-6 text-red-600" />,
     title: "Batch & Automated Payouts",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Transfer ribuan rekening bank & e-wallet secara bersamaan hanya dalam hitungan detik.",
   },
   {
-    icon: <RefreshCw className="w-6 h-6 text-indigo-600" />,
+    icon: <RefreshCw className="w-6 h-6 text-red-600" />,
     title: "Automated Subscriptions",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kelola tagihan berulang mingguan, bulanan, atau tahunan dengan penanganan auto-retry.",
   },
@@ -35,7 +35,7 @@ export default function ScaleFeatures() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Fitur Lengkap Skala <span className="text-blue-600">Enterprise</span>
+              Fitur Lengkap Skala <span className="text-red-600">Enterprise</span>
             </h2>
             <p className="mt-4 text-base text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semua modul otomatisasi transaksi yang dibutuhkan tim bisnis dan developer modern.
@@ -46,8 +46,8 @@ export default function ScaleFeatures() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {scaleItems.map((item, idx) => (
             <AnimateOnScroll key={item.title} animation="fade-up" delay={idx * 100}>
-              <div className="bg-white rounded-2xl p-8 border border-gray-200/80 shadow-xs hover:shadow-xl hover:border-blue-300 transition-all duration-300 flex items-start gap-5">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0">
+              <div className="bg-white rounded-2xl p-8 border border-gray-200/80 shadow-xs hover:shadow-xl hover:border-red-300 transition-all duration-300 flex items-start gap-5">
+                <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center shrink-0">
                   {item.icon}
                 </div>
                 <div>

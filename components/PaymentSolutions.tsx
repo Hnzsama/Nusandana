@@ -9,7 +9,7 @@ const solutions = [
   {
     id: "va",
     title: "Virtual Account Multi-Bank",
-    icon: <Building2 className="w-6 h-6 text-blue-600" />,
+    icon: <Building2 className="w-6 h-6 text-red-600" />,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rekening Virtual otomatis untuk BCA, Mandiri, BNI, BRI, Permata.",
     features: ["Konfirmasi instan", "Fitur refund otomatis", "Expired time dapat diatur"],
     link: "/payments",
@@ -17,7 +17,7 @@ const solutions = [
   {
     id: "qris",
     title: "QRIS Instant Dynamic & Static",
-    icon: <QrCode className="w-6 h-6 text-indigo-600" />,
+    icon: <QrCode className="w-6 h-6 text-red-600" />,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satu QR Code nasional untuk m-banking & seluruh e-wallet.",
     features: ["Mendukung 30+ aplikasi", "Settlement H+0", "Notifikasi webhook cepat"],
     link: "/payments",
@@ -49,11 +49,11 @@ export default function PaymentSolutions() {
         
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">
-              <Sparkles className="w-3.5 h-3.5 text-blue-600" /> Solusi Pembayaran Moduler
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-semibold uppercase tracking-wider mb-4">
+              <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Moduler
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-              Satu API untuk Semua <span className="text-blue-600">Metode Pembayaran</span>
+              Satu API untuk Semua <span className="text-red-600">Metode Pembayaran</span>
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bangun alur pembayaran terbaik untuk web, aplikasi mobile, maupun link pembayaran manual.
@@ -68,16 +68,16 @@ export default function PaymentSolutions() {
                 onMouseEnter={() => setActiveTab(item.id)}
                 className={`h-full p-8 rounded-2xl border transition-all duration-300 flex flex-col justify-between cursor-pointer group ${
                   activeTab === item.id
-                    ? "bg-gradient-to-b from-blue-50/70 via-white to-white border-blue-400 shadow-xl shadow-blue-500/10 -translate-y-1"
-                    : "bg-white border-gray-200 hover:border-blue-300 hover:shadow-md"
+                    ? "bg-gradient-to-b from-red-50/70 via-white to-white border-red-400 shadow-xl shadow-red-500/10 -translate-y-1"
+                    : "bg-white border-gray-200 hover:border-red-300 hover:shadow-md"
                 }`}
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-blue-100/60 border border-blue-200/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-red-100/60 border border-red-200/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     {item.icon}
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">
                     {item.title}
                   </h3>
 
@@ -88,7 +88,7 @@ export default function PaymentSolutions() {
                   <ul className="space-y-2 mb-8">
                     {item.features.map((feat) => (
                       <li key={feat} className="flex items-center gap-2 text-xs font-medium text-gray-700">
-                        <Check className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-red-600 shrink-0" />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -97,7 +97,7 @@ export default function PaymentSolutions() {
 
                 <Link
                   href={item.link}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 group/link"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-red-600 hover:text-red-700 group/link"
                 >
                   Pelajari Selengkapnya
                   <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />

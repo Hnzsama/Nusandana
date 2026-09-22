@@ -9,13 +9,13 @@ export default function TopBanner() {
   if (!visible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 text-white text-xs sm:text-sm py-2 px-4 flex justify-between items-center z-50">
+    <div className="bg-gradient-to-r from-red-600 via-red-500 to-teal-500 text-white text-xs sm:text-sm py-2 px-4 flex justify-between items-center z-50">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-2 sm:gap-4">
         <p className="font-medium">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
           <a
             href="#signup"
-            className="underline hover:text-blue-100 font-semibold transition-colors cursor-pointer"
+            className="underline hover:text-red-100 font-semibold transition-colors cursor-pointer"
           >
             Lorem ipsum &rarr;
           </a>

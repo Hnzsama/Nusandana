@@ -41,7 +41,7 @@ export default function FAQSection() {
         <AnimateOnScroll animation="fade-up">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Pertanyaan yang Sering Diajukan <span className="text-blue-600">(FAQ)</span>
+              Pertanyaan yang Sering Diajukan <span className="text-red-600">(FAQ)</span>
             </h2>
             <p className="mt-3 text-base text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temukan jawaban seputar layanan kami.
@@ -60,12 +60,12 @@ export default function FAQSection() {
                 >
                   <button
                     onClick={() => toggleFaq(faq.id)}
-                    className="w-full flex items-center justify-between p-4 text-left font-bold text-gray-900 text-sm sm:text-base hover:text-blue-600 transition-colors cursor-pointer"
+                    className="w-full flex items-center justify-between p-4 text-left font-bold text-gray-900 text-sm sm:text-base hover:text-red-600 transition-colors cursor-pointer"
                   >
                     <span>{faq.question}</span>
                     <ChevronDown
                       className={`w-5 h-5 text-gray-400 transition-transform duration-200 shrink-0 ${
-                        isOpen ? "rotate-180 text-blue-600" : ""
+                        isOpen ? "rotate-180 text-red-600" : ""
                       }`}
                     />
                   </button>

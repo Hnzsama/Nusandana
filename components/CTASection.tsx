@@ -13,7 +13,7 @@ export default function CTASection() {
           {/* Left Text & Options */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+              <span className="text-xs font-bold uppercase tracking-wider text-red-600">
                 Lorem ipsum dolor sit amet
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
@@ -26,7 +26,7 @@ export default function CTASection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div className="space-y-3 p-5 rounded-2xl bg-slate-50 border border-gray-100 cursor-pointer">
-                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold">
+                <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-bold">
                   <PhoneCall className="w-5 h-5" />
                 </div>
                 <h3 className="font-bold text-gray-900 text-lg">Lorem Sales</h3>
@@ -36,12 +36,12 @@ export default function CTASection() {
               </div>
 
               <div className="space-y-3 p-5 rounded-2xl bg-slate-50 border border-gray-100 cursor-pointer">
-                <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold">
+                <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-bold">
                   <Headphones className="w-5 h-5" />
                 </div>
                 <h3 className="font-bold text-gray-900 text-lg">Dolor Support</h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Lorem ipsum dolor sit amet: <span className="font-semibold text-blue-600">+62 800-0000-0000</span> atau <span className="font-semibold text-blue-600">lorem@ipsum.com</span>
+                  Lorem ipsum dolor sit amet: <span className="font-semibold text-red-600">+62 800-0000-0000</span> atau <span className="font-semibold text-red-600">lorem@ipsum.com</span>
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function CTASection() {
             <div>
               <a
                 href="#sales"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-base shadow-lg shadow-blue-600/30 hover:shadow-xl transition-all cursor-pointer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-base shadow-lg shadow-red-600/30 hover:shadow-xl transition-all cursor-pointer"
               >
                 Lorem Ipsum <ArrowRight className="w-5 h-5" />
               </a>

@@ -52,7 +52,7 @@ export default function UMKMPaymentLinksSection() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-6 rounded-xl shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 cursor-pointer transition-all">
+              <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-6 rounded-xl shadow-lg shadow-red-600/30 hover:shadow-xl hover:shadow-red-600/40 cursor-pointer transition-all">
                 Daftar Sekarang <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button
@@ -78,7 +78,7 @@ export default function UMKMPaymentLinksSection() {
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Background Glow */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-3xl blur-2xl pointer-events-none" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-red-500/20 to-emerald-500/20 rounded-3xl blur-2xl pointer-events-none" />
 
               {/* Order Invoice Card */}
               <div className="relative z-10 bg-gray-50 dark:bg-slate-800/80 rounded-3xl p-6 border border-gray-200 dark:border-slate-700 shadow-xl space-y-6">
@@ -88,7 +88,7 @@ export default function UMKMPaymentLinksSection() {
                     <Badge className="bg-emerald-100 text-emerald-800 border-emerald-300">Aktif</Badge>
                   </div>
                   <p className="text-xs text-gray-500 dark:text-slate-400 mt-1">Invoice #1691556435837</p>
-                  <p className="text-xs text-blue-600 dark:text-blue-400 mt-0.5 flex items-center gap-1 font-medium">
+                  <p className="text-xs text-red-600 dark:text-red-400 mt-0.5 flex items-center gap-1 font-medium">
                     <Clock className="w-3.5 h-3.5" /> Bayar sebelum 10 Desember 2026
                   </p>
                 </div>
@@ -107,18 +107,18 @@ export default function UMKMPaymentLinksSection() {
 
                 <div className="border-t border-dashed border-gray-200 dark:border-slate-700 pt-4 flex justify-between items-center">
                   <span className="text-sm font-bold text-gray-900 dark:text-white">Jumlah Total:</span>
-                  <span className="text-xl font-extrabold text-blue-600 dark:text-blue-400">Rp 505.000</span>
+                  <span className="text-xl font-extrabold text-red-600 dark:text-red-400">Rp 505.000</span>
                 </div>
               </div>
 
               {/* Overlapping Checkout Payment Methods Gateway Window */}
               <div className="relative lg:-mt-24 lg:-ml-12 z-20 bg-white dark:bg-slate-900 rounded-3xl p-6 border border-gray-200 dark:border-slate-700 shadow-2xl space-y-5">
-                <div className="bg-blue-50 dark:bg-blue-950/50 p-4 rounded-2xl flex items-center justify-between">
+                <div className="bg-red-50 dark:bg-red-950/50 p-4 rounded-2xl flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-blue-800 dark:text-blue-300 font-medium">Bayar sebelum 10 Des 2026 12:47 PM</p>
-                    <p className="text-2xl font-extrabold text-blue-600 dark:text-blue-400">Rp 505.000</p>
+                    <p className="text-xs text-red-800 dark:text-red-300 font-medium">Bayar sebelum 10 Des 2026 12:47 PM</p>
+                    <p className="text-2xl font-extrabold text-red-600 dark:text-red-400">Rp 505.000</p>
                   </div>
-                  <ShieldCheck className="w-8 h-8 text-blue-600" />
+                  <ShieldCheck className="w-8 h-8 text-red-600" />
                 </div>
 
                 <div>
@@ -135,12 +135,12 @@ export default function UMKMPaymentLinksSection() {
                           onClick={() => setSelectedMethod(method.id)}
                           className={`p-3.5 rounded-xl border transition-all cursor-pointer flex items-center justify-between ${
                             isSelected
-                              ? "border-blue-600 bg-blue-50/50 dark:bg-blue-950/40 shadow-xs"
+                              ? "border-red-600 bg-red-50/50 dark:bg-red-950/40 shadow-xs"
                               : "border-gray-200 dark:border-slate-800 hover:border-gray-300 dark:hover:border-slate-700 hover:bg-gray-50 dark:hover:bg-slate-800/40"
                           }`}
                         >
                           <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 flex items-center justify-center">
                               <IconComp className="w-4 h-4" />
                             </div>
                             <div>
@@ -150,14 +150,14 @@ export default function UMKMPaymentLinksSection() {
                               <p className="text-[11px] text-gray-500 dark:text-slate-400">{method.count}</p>
                             </div>
                           </div>
-                          <ChevronRight className={`w-4 h-4 text-gray-400 transition-transform ${isSelected ? "rotate-90 text-blue-600" : ""}`} />
+                          <ChevronRight className={`w-4 h-4 text-gray-400 transition-transform ${isSelected ? "rotate-90 text-red-600" : ""}`} />
                         </div>
                       );
                     })}
                   </div>
                 </div>
 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl cursor-pointer shadow-md">
+                <Button className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl cursor-pointer shadow-md">
                   Bayar Rp 505.000
                 </Button>
               </div>
@@ -196,9 +196,9 @@ export default function UMKMPaymentLinksSection() {
             ].map((feature, i) => {
               const FIcon = feature.icon;
               return (
-                <Card key={i} className="border-gray-200 dark:border-slate-800 hover:border-blue-500/40 hover:shadow-lg transition-all group">
+                <Card key={i} className="border-gray-200 dark:border-slate-800 hover:border-red-500/40 hover:shadow-lg transition-all group">
                   <CardContent className="p-6 space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-2xl bg-red-50 dark:bg-red-950 text-red-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <FIcon className="w-6 h-6" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">{feature.title}</h3>

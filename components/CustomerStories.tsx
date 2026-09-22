@@ -36,7 +36,7 @@ export default function CustomerStories() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Kisah Sukses <span className="text-blue-600">Mitra Kemitraan</span>
+              Kisah Sukses <span className="text-red-600">Mitra Kemitraan</span>
             </h2>
             <p className="mt-4 text-base text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengalaman nyata bisnis yang bertumbuh bersama PaymentApp.
@@ -47,7 +47,7 @@ export default function CustomerStories() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stories.map((item, idx) => (
             <AnimateOnScroll key={item.author} animation="fade-up" delay={idx * 100}>
-              <div className="bg-slate-50/70 p-8 rounded-2xl border border-gray-200/80 flex flex-col justify-between h-full hover:bg-white hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+              <div className="bg-slate-50/70 p-8 rounded-2xl border border-gray-200/80 flex flex-col justify-between h-full hover:bg-white hover:shadow-xl hover:border-red-300 transition-all duration-300">
                 <div>
                   <div className="flex items-center gap-1 text-amber-400 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -55,7 +55,7 @@ export default function CustomerStories() {
                     ))}
                   </div>
 
-                  <Quote className="w-8 h-8 text-blue-200 mb-3" />
+                  <Quote className="w-8 h-8 text-red-200 mb-3" />
 
                   <p className="text-gray-700 text-sm leading-relaxed mb-6 italic">
                     "{item.quote}"
@@ -67,7 +67,7 @@ export default function CustomerStories() {
                     <h4 className="font-bold text-gray-900 text-sm">{item.author}</h4>
                     <p className="text-xs text-gray-500">{item.role} • {item.company}</p>
                   </div>
-                  <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">
+                  <span className="text-xs font-bold text-red-600 bg-red-50 px-2.5 py-1 rounded-md border border-red-100">
                     {item.growth}
                   </span>
                 </div>

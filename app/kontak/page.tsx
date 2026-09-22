@@ -14,14 +14,14 @@ export default function KontakPage() {
       <Navbar />
 
       <main className="flex-grow">
-        <section className="py-16 sm:py-24 bg-gradient-to-b from-blue-50/70 via-white to-slate-50/50">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-red-50/70 via-white to-slate-50/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
             <AnimateOnScroll animation="fade-up">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">
-                <MessageSquare className="w-4 h-4 text-blue-600" /> Layanan Bantuan & Consult
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-semibold uppercase tracking-wider mb-4">
+                <MessageSquare className="w-4 h-4 text-red-600" /> Layanan Bantuan & Consult
               </div>
               <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
-                Hubungi Tim Spesialis <span className="text-blue-600">Nusandana</span>
+                Hubungi Tim Spesialis <span className="text-red-600">Nusandana</span>
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tim kami siap memberikan konsultasi integrasi gratis untuk bisnis Anda.
@@ -36,7 +36,7 @@ export default function KontakPage() {
             <div className="lg:col-span-5 space-y-6">
               <AnimateOnScroll animation="fade-up">
                 <div className="p-6 rounded-2xl bg-slate-50 border border-gray-200/80 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-600 shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -50,7 +50,7 @@ export default function KontakPage() {
 
               <AnimateOnScroll animation="fade-up" delay={100}>
                 <div className="p-6 rounded-2xl bg-slate-50 border border-gray-200/80 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-red-600 shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -87,7 +87,7 @@ export default function KontakPage() {
                         <input
                           type="text"
                           placeholder="Nama Anda"
-                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
                         />
                       </div>
                       <div>
@@ -95,7 +95,7 @@ export default function KontakPage() {
                         <input
                           type="email"
                           placeholder="nama@perusahaan.com"
-                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
                         />
                       </div>
                     </div>
@@ -105,7 +105,7 @@ export default function KontakPage() {
                       <input
                         type="text"
                         placeholder="Contoh: PT Maju Bersama"
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
                       />
                     </div>
 
@@ -114,13 +114,13 @@ export default function KontakPage() {
                       <textarea
                         rows={4}
                         placeholder="Tuliskan kebutuhan bisnis Anda..."
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
                       />
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                      className="w-full py-3.5 px-6 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold text-sm shadow-md shadow-red-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
                     >
                       <Send className="w-4 h-4" /> Kirim Pesan Konsultasi
                     </button>

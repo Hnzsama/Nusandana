@@ -13,11 +13,11 @@ export default function Footer() {
           {/* Brand & Language */}
           <div className="col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">
+              <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center text-white font-bold">
                 N
               </div>
               <span className="text-xl font-extrabold text-white tracking-tight">
-                Nusan<span className="text-blue-500">dana</span>
+                Nusan<span className="text-red-500">dana</span>
               </span>
             </Link>
 
@@ -35,14 +35,14 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Produk</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Payments</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-blue-400 transition-colors cursor-pointer">Payment Links</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">In-person Payments</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Subscriptions</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Batch Payouts</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Automated Payouts</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Cross Border</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">Expense Management</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Payments</Link></li>
+              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">In-person Payments</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Subscriptions</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Batch Payouts</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Automated Payouts</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Cross Border</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Expense Management</Link></li>
             </ul>
           </div>
 
@@ -50,10 +50,10 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Solusi</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support" className="hover:text-blue-400 transition-colors cursor-pointer font-semibold text-blue-400">Program Support UMKM</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-blue-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">E-Commerce</Link></li>
-              <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">SaaS & Digital</Link></li>
+              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer font-semibold text-red-400">Program Support UMKM</Link></li>
+              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">E-Commerce</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">SaaS & Digital</Link></li>
             </ul>
           </div>
 
@@ -61,10 +61,10 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Panduan</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support/artikel" className="hover:text-blue-400 transition-colors cursor-pointer">Blog & Artikel UMKM</Link></li>
-              <li><Link href="/mitra" className="hover:text-blue-400 transition-colors cursor-pointer">Events</Link></li>
-              <li><Link href="/kontak" className="hover:text-blue-400 transition-colors cursor-pointer">Pusat Bantuan</Link></li>
-              <li><Link href="/program-support" className="hover:text-blue-400 transition-colors cursor-pointer">Dokumentasi API</Link></li>
+              <li><Link href="/program-support/artikel" className="hover:text-red-400 transition-colors cursor-pointer">Blog & Artikel UMKM</Link></li>
+              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Events</Link></li>
+              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Pusat Bantuan</Link></li>
+              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Dokumentasi API</Link></li>
             </ul>
           </div>
 
@@ -72,12 +72,12 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Perusahaan</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support/artikel" className="hover:text-blue-400 transition-colors cursor-pointer">Portal Berita</Link></li>
-              <li><Link href="/mitra" className="hover:text-blue-400 transition-colors cursor-pointer">Mitra Kami</Link></li>
-              <li><Link href="/lisensi" className="hover:text-blue-400 transition-colors cursor-pointer">Tentang Kami</Link></li>
-              <li><Link href="/mitra" className="hover:text-blue-400 transition-colors cursor-pointer">Karir</Link></li>
-              <li><Link href="/lisensi" className="hover:text-blue-400 transition-colors cursor-pointer">Lisensi BI</Link></li>
-              <li><Link href="/lisensi" className="hover:text-blue-400 transition-colors cursor-pointer">Kebijakan Privasi</Link></li>
+              <li><Link href="/program-support/artikel" className="hover:text-red-400 transition-colors cursor-pointer">Portal Berita</Link></li>
+              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Mitra Kami</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Tentang Kami</Link></li>
+              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Karir</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Lisensi BI</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Kebijakan Privasi</Link></li>
             </ul>
           </div>
         </div>

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 const licenseItems = [
   {
-    icon: <Award className="w-6 h-6 text-blue-600 group-hover:scale-110 transition-transform" />,
-    iconBg: "bg-blue-50 border-blue-100",
+    icon: <Award className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
+    iconBg: "bg-red-50 border-red-100",
     badge: "Otoritas Bank Indonesia",
     title: "Lisensi PJP Bank Indonesia",
     desc: "Terdaftar dan diawasi secara resmi oleh Bank Indonesia sebagai Penyelenggara Jasa Pembayaran (PJP) Kategori Izin 1.",
@@ -26,7 +26,7 @@ const licenseItems = [
     linkText: "Verifikasi Lisensi BI",
   },
   {
-    icon: <Lock className="w-6 h-6 text-indigo-600 group-hover:scale-110 transition-transform" />,
+    icon: <Lock className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-indigo-50 border-indigo-100",
     badge: "Keamanan Finansial",
     title: "PCI-DSS Level 1 Compliance",
@@ -60,14 +60,14 @@ export default function LisensiPage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-24 pb-16 sm:pt-28 sm:pb-24 bg-gradient-to-b from-blue-50/70 via-white to-slate-50/50">
+        <section className="pt-24 pb-16 sm:pt-28 sm:pb-24 bg-gradient-to-b from-red-50/70 via-white to-slate-50/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
             <AnimateOnScroll animation="fade-up">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
-                <ShieldCheck className="w-4 h-4 text-blue-600" /> Regulasi & Keamanan Tingkat Tinggi
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
+                <ShieldCheck className="w-4 h-4 text-red-600" /> Regulasi & Keamanan Tingkat Tinggi
               </div>
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-gray-900 leading-tight">
-                Lisensi Bank Indonesia & <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">Sertifikasi Keamanan</span>
+                Lisensi Bank Indonesia & <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">Sertifikasi Keamanan</span>
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Keamanan transaksi dan kepatuhan hukum adalah komitmen utama infrastruktur kami.
@@ -82,11 +82,11 @@ export default function LisensiPage() {
             
             <AnimateOnScroll animation="fade-up">
               <div className="text-center max-w-2xl mx-auto mb-16">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-600 text-xs font-bold uppercase tracking-wider mb-3">
                   <Shield className="w-3.5 h-3.5" /> Standar Keamanan
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
-                  Sertifikasi & Kepatuhan <span className="text-blue-600">Internasional</span>
+                  Sertifikasi & Kepatuhan <span className="text-red-600">Internasional</span>
                 </h2>
                 <p className="mt-3 text-sm sm:text-base text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Perlindungan data keuangan dengan infrastruktur teruji.
@@ -97,10 +97,10 @@ export default function LisensiPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {licenseItems.map((item, idx) => (
                 <AnimateOnScroll key={item.title} animation="fade-up" delay={idx * 100}>
-                  <div className="h-full bg-white rounded-3xl p-8 border border-gray-200/90 shadow-xs hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                  <div className="h-full bg-white rounded-3xl p-8 border border-gray-200/90 shadow-xs hover:border-red-400 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
                     
                     {/* Top Accent Glow */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-50 to-transparent rounded-bl-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
 
                     <div>
                       {/* Icon & Badge */}
@@ -113,7 +113,7 @@ export default function LisensiPage() {
                         </span>
                       </div>
 
-                      <h3 className="text-xl font-extrabold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors relative z-10">
+                      <h3 className="text-xl font-extrabold text-gray-900 mb-3 group-hover:text-red-600 transition-colors relative z-10">
                         {item.title}
                       </h3>
 
@@ -135,7 +135,7 @@ export default function LisensiPage() {
                     {/* Bottom Action Button */}
                     <a
                       href="/kontak"
-                      className="w-full py-3 px-4 rounded-xl bg-gray-50 group-hover:bg-blue-600 text-gray-800 group-hover:text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 border border-gray-200 group-hover:border-blue-600 transition-all duration-300 cursor-pointer shadow-2xs group/btn relative z-10"
+                      className="w-full py-3 px-4 rounded-xl bg-gray-50 group-hover:bg-red-600 text-gray-800 group-hover:text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 border border-gray-200 group-hover:border-red-600 transition-all duration-300 cursor-pointer shadow-2xs group/btn relative z-10"
                     >
                       {item.linkText}
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
