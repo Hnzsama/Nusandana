@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://paymentapp.co/sitemap.xml",
+    sitemap: "https://nusandana.co/sitemap.xml",
   };
 }

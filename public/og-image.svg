@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Decorative Glow -->
+  <circle cx="1000" cy="150" r="300" fill="#3B82F6" fill-opacity="0.15" filter="blur(60px)"/>
+  <circle cx="200" cy="500" r="250" fill="#6366F1" fill-opacity="0.15" filter="blur(60px)"/>
+
+  <!-- Logo Mark -->
+  <rect x="100" y="100" width="80" height="80" rx="24" fill="#2563EB"/>
+  <path d="M140 116L113 130L140 144L167 130L140 116Z" fill="white"/>
+  <path d="M113 151L140 165L167 151" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M113 140L140 154L167 140" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Logo Text -->
+  <text x="200" y="158" fill="#FFFFFF" font-family="sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Nusan<tspan fill="#3B82F6">dana</tspan></text>
+
+  <!-- Badge -->
+  <rect x="100" y="220" width="260" height="36" rx="18" fill="#2563EB" fill-opacity="0.2" stroke="#3B82F6" stroke-opacity="0.4"/>
+  <text x="120" y="243" fill="#93C5FD" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="1">PAYMENT INFRASTRUCTURE 3.0</text>
+
+  <!-- Main Headline -->
+  <text x="100" y="320" fill="#FFFFFF" font-family="sans-serif" font-size="52" font-weight="900" letter-spacing="-1">Solusi Pembayaran Digital Tercepat</text>
+  <text x="100" y="380" fill="url(#text-gradient)" font-family="sans-serif" font-size="52" font-weight="900" letter-spacing="-1">&amp; Terpercaya di Indonesia</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="440" fill="#94A3B8" font-family="sans-serif" font-size="22" font-weight="500">Terima Virtual Account, QRIS, E-Wallet, &amp; Kartu Kredit dalam 1 API Unified.</text>
+
+  <!-- Trust Badges Bar at Bottom -->
+  <rect x="100" y="500" width="1000" height="1" fill="#334155"/>
+  <text x="100" y="545" fill="#CBD5E1" font-family="sans-serif" font-size="16" font-weight="700">✓ Lisensi Bank Indonesia (PJP Kategori 1)</text>
+  <text x="500" y="545" fill="#CBD5E1" font-family="sans-serif" font-size="16" font-weight="700">✓ PCI-DSS Level 1 Compliant</text>
+  <text x="830" y="545" fill="#CBD5E1" font-family="sans-serif" font-size="16" font-weight="700">✓ 99.99% Uptime SLA</text>
+</svg>
