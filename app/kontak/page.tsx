@@ -42,7 +42,8 @@ export default function KontakPage() {
                   <div>
                     <h4 className="font-bold text-gray-900 text-base">Alamat Kantor Pusat</h4>
                     <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                      Sudirman Central Business District (SCBD) Tower A, Lt. 28, Jakarta Selatan 12190
+                      PT Gerbang Pembayaran Digital (Nusandana)<br />
+                      Menara Nusandana Lt. 12, Jl. H. R. Rasuna Said, Kuningan Barat, Jakarta Selatan 12950
                     </p>
                   </div>
                 </div>
@@ -50,26 +51,27 @@ export default function KontakPage() {
 
               <AnimateOnScroll animation="fade-up" delay={100}>
                 <div className="p-6 rounded-2xl bg-slate-50 border border-gray-200/80 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-red-600 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-600 shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-base">Email Layanan</h4>
-                    <p className="text-sm text-gray-600 mt-1">support@nusandana.co</p>
-                    <p className="text-sm text-gray-600">sales@nusandana.co</p>
+                    <h4 className="font-bold text-gray-900 text-base">Email Layanan Resmi</h4>
+                    <p className="text-sm text-gray-600 mt-1">support@nusandana.id</p>
+                    <p className="text-sm text-gray-600">info@nusandana.id</p>
                   </div>
                 </div>
               </AnimateOnScroll>
 
               <AnimateOnScroll animation="fade-up" delay={200}>
                 <div className="p-6 rounded-2xl bg-slate-50 border border-gray-200/80 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center text-sky-600 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-600 shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-base">Hotline Support</h4>
-                    <p className="text-sm text-gray-600 mt-1">+62 (021) 555-8888</p>
-                    <p className="text-xs text-gray-400 mt-0.5">Senin - Minggu, 24 Jam Nonstop</p>
+                    <h4 className="font-bold text-gray-900 text-base">Nomor Resmi Nusandana</h4>
+                    <p className="text-sm font-bold text-gray-900 mt-1">+62 896-6688-8288</p>
+                    <p className="text-sm font-bold text-gray-900">+62 896-6688-8788</p>
+                    <p className="text-xs text-gray-500 mt-1">Layanan Customer Care & Support 24 Jam Nonstop</p>
                   </div>
                 </div>
               </AnimateOnScroll>

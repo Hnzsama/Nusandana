@@ -6,25 +6,25 @@ import { Star, Quote } from "lucide-react";
 
 const stories = [
   {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integrasi payment link paymentapp meningkatkan konversi penjualan online kami hingga 40%.",
+    quote: "Integrasi QRIS dan Payment Link dari Nusandana membuat proses pembayaran pembeli resto kami jauh lebih praktis. Konversi penjualan meningkat 45% dan bebas kendala transaksi!",
     author: "Budi Santoso",
-    role: "CEO & Founder",
-    company: "Kopi Kenangan Nusantara",
-    growth: "+40% Conversion Rate",
+    role: "Pemilik Usaha Kuliner",
+    company: "Resto Rasa Nusantara",
+    growth: "+45% Transaksi Online",
   },
   {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kecepatan settlement real-time membantu perputaran modal usaha toko kami jauh lebih cepat.",
+    quote: "Fitur Settlement H+0 (pencairan di hari yang sama) Nusandana sangat membantu arus kas modal usaha toko retail kami. Dana masuk tepat waktu dan laporan transaksi sangat transparan!",
     author: "Siti Rahmawati",
-    role: "Operational Director",
-    company: "Batik Fashion Indonesia",
-    growth: "Real-Time Settlement",
+    role: "Owner Retail Fashion",
+    company: "Batik Modern Nusantara",
+    growth: "Settlement H+0 Instan",
   },
   {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dokumentasi API sangat jelas, tim engineering kami dapat melakukan integrasi penuh dalam 1 hari.",
+    quote: "Tim Customer Care Nusandana sangat sigap dan proses integrasi API gerbang pembayaran hanya butuh waktu 1 hari. Aplikasi mobile kasirnya juga sangat mudah digunakan staff!",
     author: "Hendrik Wijaya",
-    role: "CTO",
-    company: "Logistik Cepat Asia",
-    growth: "1 Day Integration",
+    role: "Manager Operasional",
+    company: "Toko Kelontong & Digital Store",
+    growth: "Integrasi Fast 1-Day",
   },
 ];
 
@@ -36,10 +36,10 @@ export default function CustomerStories() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Kisah Sukses <span className="text-red-600">Mitra Kemitraan</span>
+              Ulasan & Review Customer <span className="text-red-600">Nusandana</span>
             </h2>
-            <p className="mt-4 text-base text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengalaman nyata bisnis yang bertumbuh bersama PaymentApp.
+            <p className="mt-4 text-base text-gray-600 font-medium">
+              Testimoni dan pengalaman nyata para merchant serta pemilik bisnis yang bertumbuh bersama ekosistem pembayaran Nusandana.
             </p>
           </div>
         </AnimateOnScroll>

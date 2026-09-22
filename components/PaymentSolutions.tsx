@@ -7,41 +7,41 @@ import { Building2, QrCode, Wallet, CreditCard, Sparkles, ArrowRight, Check } fr
 
 const solutions = [
   {
-    id: "va",
-    title: "Virtual Account Multi-Bank",
-    icon: <Building2 className="w-6 h-6 text-red-600" />,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rekening Virtual otomatis untuk BCA, Mandiri, BNI, BRI, Permata.",
-    features: ["Konfirmasi instan", "Fitur refund otomatis", "Expired time dapat diatur"],
-    link: "/payments",
-  },
-  {
     id: "qris",
     title: "QRIS Instant Dynamic & Static",
     icon: <QrCode className="w-6 h-6 text-red-600" />,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Satu QR Code nasional untuk m-banking & seluruh e-wallet.",
-    features: ["Mendukung 30+ aplikasi", "Settlement H+0", "Notifikasi webhook cepat"],
-    link: "/payments",
+    description: "Satu QR Code nasional resmi untuk seluruh m-banking dan e-wallet di Indonesia.",
+    features: ["Mendukung 30+ aplikasi bank & wallet", "Settlement H+0 instan", "Notifikasi webhook real-time"],
+    link: "/payments?cat=qris-wallet",
+  },
+  {
+    id: "va",
+    title: "Virtual Account Multi-Bank",
+    icon: <Building2 className="w-6 h-6 text-red-600" />,
+    description: "Rekening Virtual Account otomatis untuk BCA, Mandiri, BNI, BRI, Permata, Danamon & CIMB.",
+    features: ["Konfirmasi transaksi otomatis", "Fitur refund & penyesuaian", "Masa berlaku (expired) fleksibel"],
+    link: "/payments?cat=va",
   },
   {
     id: "ewallet",
     title: "E-Wallet Direct Checkout",
-    icon: <Wallet className="w-6 h-6 text-sky-600" />,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integrasi GoPay, OVO, ShopeePay, DANA, LinkAja.",
-    features: ["Auto app redirect", "Tingkat sukses 99.8%", "Multi-currency ready"],
-    link: "/payments",
+    icon: <Wallet className="w-6 h-6 text-red-600" />,
+    description: "Integrasi pembayaran langsung GoPay, OVO, ShopeePay, DANA, dan LinkAja.",
+    features: ["Auto app-redirect cepat", "Tingkat keberhasilan 99.8%", "Deep-link checkout seamlessly"],
+    link: "/payments?cat=qris-wallet",
   },
   {
-    id: "card",
-    title: "Kartu Kredit & International Pay",
-    icon: <CreditCard className="w-6 h-6 text-emerald-600" />,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Terima Visa, Mastercard, JCB dengan 3D Secure 2.0.",
-    features: ["Deteksi fraud cerdas", "Recurring subscription", "Tokenisasi data aman"],
-    link: "/payments",
+    id: "disbursement",
+    title: "Disbursement & Transfer Dana",
+    icon: <CreditCard className="w-6 h-6 text-red-600" />,
+    description: "Transfer dana instan ke ribuan rekening bank & e-wallet secara bersamaan dalam hitungan detik.",
+    features: ["Batch payout otomatis", "Validasi nomor rekening instan", "Laporan riwayat pencairan transparan"],
+    link: "/payments?cat=all",
   },
 ];
 
 export default function PaymentSolutions() {
-  const [activeTab, setActiveTab] = useState("va");
+  const [activeTab, setActiveTab] = useState("qris");
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -53,10 +53,10 @@ export default function PaymentSolutions() {
               <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Moduler
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-              Satu API untuk Semua <span className="text-red-600">Metode Pembayaran</span>
+              Payment Support <span className="text-red-600">Nusandana</span>
             </h2>
-            <p className="mt-4 text-base sm:text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bangun alur pembayaran terbaik untuk web, aplikasi mobile, maupun link pembayaran manual.
+            <p className="mt-4 text-base sm:text-lg text-gray-600 font-medium">
+              Dukung seluruh kebutuhan transaksi bisnis Anda dengan QRIS, Virtual Account, E-Wallet, dan Disbursement instan.
             </p>
           </div>
         </AnimateOnScroll>

@@ -9,29 +9,29 @@ const stats = [
     icon: <TrendingUp className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-red-50 border-red-100/80",
     value: "Rp 50 Triliun+",
-    label: "Total Volume Transaksi Tahunan",
-    description: "Diproses secara aman & transparan melalui jaringan Nusandana.",
+    label: "Tampilan Dashboard",
+    description: "Pantau arus kas, real-time analytics & laporan transaksi bisnis melalui 1 dashboard terpadu Nusandana.",
   },
   {
     icon: <Users className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
-    iconBg: "bg-indigo-50 border-indigo-100/80",
+    iconBg: "bg-red-50 border-red-100/80",
     value: "500.000+",
-    label: "Merchant & UMKM Aktif",
-    description: "Dari toko online, retail, hingga perusahaaan enterprise nasional.",
+    label: "Tampilan Aplikasi",
+    description: "Aplikasi mobile Nusandana yang intuitif dan praktis dari toko online, retail, hingga UMKM aktif.",
   },
   {
-    icon: <Clock className="w-6 h-6 text-sky-600 group-hover:scale-110 transition-transform" />,
-    iconBg: "bg-sky-50 border-sky-100/80",
-    value: "99.99%",
-    label: "SLA Uptime System",
-    description: "Infrastruktur cloud multi-region tanpa kompromi downtime.",
+    icon: <Clock className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
+    iconBg: "bg-red-50 border-red-100/80",
+    value: "Multi-Role",
+    label: "Multiple Log in Akun Bos dan Kasir",
+    description: "Hak akses login terpisah untuk pemilik bisnis (bos), supervisor, hingga akun kasir dengan kontrol penuh.",
   },
   {
-    icon: <ShieldCheck className="w-6 h-6 text-emerald-600 group-hover:scale-110 transition-transform" />,
-    iconBg: "bg-emerald-50 border-emerald-100/80",
-    value: "< 100 ms",
-    label: "Rata-rata Respon API",
-    description: "Kecepatan eksekusi checkout & instant settlement otomatis.",
+    icon: <ShieldCheck className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
+    iconBg: "bg-red-50 border-red-100/80",
+    value: "Settlement H+0",
+    label: "Settlement H+0 dan Customer Care",
+    description: "Pencairan dana langsung di hari yang sama (H+0) serta pendampingan tim Customer Care Nusandana.",
   },
 ];
 
@@ -47,10 +47,10 @@ export default function StatisticsSection() {
               <Sparkles className="w-3.5 h-3.5" /> Skalabilitas & Performa
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
-              Infrastruktur Keuangan dengan <span className="bg-gradient-to-r from-red-600 to-red-600 bg-clip-text text-transparent">Performa Tinggi</span>
+              Ekosistem <span className="bg-gradient-to-r from-red-600 to-rose-600 bg-clip-text text-transparent">Nusandana</span>
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dirancang untuk skalabilitas transaksi tinggi tanpa kompromi.
+            <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
+              Solusi pembayaran digital dan infrastruktur transaksi terintegrasi yang dirancang untuk mempercepat pertumbuhan bisnis Anda.
             </p>
           </div>
         </AnimateOnScroll>

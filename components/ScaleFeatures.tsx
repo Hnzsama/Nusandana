@@ -2,28 +2,28 @@
 
 import React from "react";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import { Cpu, RefreshCw, BarChart3, Layers, CheckCircle } from "lucide-react";
+import { Headphones, Mail, Share2, BookOpen } from "lucide-react";
 
 const scaleItems = [
   {
-    icon: <Cpu className="w-6 h-6 text-red-600" />,
-    title: "Batch & Automated Payouts",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Transfer ribuan rekening bank & e-wallet secara bersamaan hanya dalam hitungan detik.",
+    icon: <Headphones className="w-6 h-6 text-red-600" />,
+    title: "Customer Care Nusandana",
+    desc: "Layanan bantuan Customer Care 24/7 dan pendampingan teknis integrasi gerbang pembayaran untuk kelancaran transaksi bisnis Anda.",
   },
   {
-    icon: <RefreshCw className="w-6 h-6 text-red-600" />,
-    title: "Automated Subscriptions",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kelola tagihan berulang mingguan, bulanan, atau tahunan dengan penanganan auto-retry.",
+    icon: <Mail className="w-6 h-6 text-red-600" />,
+    title: "Email Support & Laporan Otomatis",
+    desc: "Laporan transaksi harian otomatis dikirimkan ke email Anda, notifikasi pencairan dana, dan bantuan support responsif.",
   },
   {
-    icon: <BarChart3 className="w-6 h-6 text-sky-600" />,
-    title: "Real-time Financial Analytics",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pantau arus kas, tingkat keberhasilan transaksi, dan rekonsiliasi keuangan dalam 1 dashboard.",
+    icon: <Share2 className="w-6 h-6 text-red-600" />,
+    title: "Sosial Media & Komunitas Resmi",
+    desc: "Saluran komunikasi sosial media resmi Nusandana untuk informasi promo, pembaruan sistem, dan jaringan komunitas merchant.",
   },
   {
-    icon: <Layers className="w-6 h-6 text-emerald-600" />,
-    title: "Developer First APIs & SDKs",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. SDK resmi untuk Node.js, Python, PHP, Java, React Native, Flutter, dan iOS/Android.",
+    icon: <BookOpen className="w-6 h-6 text-red-600" />,
+    title: "Tutorial Penggunaan Aplikasi Nusandana",
+    desc: "Panduan praktis dan video tutorial langkah demi langkah penggunaan aplikasi mobile Nusandana serta fitur kasir.",
   },
 ];
 
@@ -35,10 +35,10 @@ export default function ScaleFeatures() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Fitur Lengkap Skala <span className="text-red-600">Enterprise</span>
+              Layanan & <span className="text-red-600">Dukungan Fitur Nusandana</span>
             </h2>
-            <p className="mt-4 text-base text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semua modul otomatisasi transaksi yang dibutuhkan tim bisnis dan developer modern.
+            <p className="mt-4 text-base text-gray-600 font-medium">
+              Fasilitas lengkap pendampingan bisnis, tutorial penggunaan aplikasi, hingga layanan Customer Care yang siap membantu Anda.
             </p>
           </div>
         </AnimateOnScroll>

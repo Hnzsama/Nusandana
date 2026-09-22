@@ -19,20 +19,20 @@ export default function HeroSection() {
           <div className="lg:col-span-7 text-center lg:text-left">
             <AnimateOnScroll animation="fade-up">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/90 border border-red-200 text-red-700 text-xs font-semibold uppercase tracking-wider mb-6 shadow-xs">
-                <Sparkles className="w-3.5 h-3.5 text-red-600" /> Payment Infrastructure 3.0
+                <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Digital
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.15]">
                 Solusi Pembayaran Digital <br className="hidden sm:inline" />
                 <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">
-                  Tercepat & Terpercaya
+                  Bayar Lebih Mudah. Bisnis Lebih Lancar.
                 </span>
               </h1>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={100}>
-              <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Terima pembayaran Virtual Account, QRIS, E-Wallet, dan Kartu Kredit dengan 1 integrasi API modern.
+              <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                Kelola transaksi bisnis Anda dengan solusi pembayaran digital dengan Nusandana — solusi pembayaran dari <strong className="text-gray-900 font-semibold">PT Gerbang Pembayaran Digital</strong>. Terima pembayaran, pantau transaksi, dan nikmati proses settlement yang praktis dalam satu ekosistem yang dirancang untuk membantu bisnis Anda berkembang.
               </p>
             </AnimateOnScroll>
 

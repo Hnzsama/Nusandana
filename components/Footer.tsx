@@ -2,69 +2,174 @@
 
 import React from "react";
 import Link from "next/link";
-import { ShieldAlert, Globe, Mail, MessageCircle } from "lucide-react";
+import { ShieldAlert, Globe, Mail, MessageCircle, Phone, MapPin, CheckCircle2 } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 text-xs leading-relaxed">
+    <footer className="bg-slate-950 text-slate-400 text-xs leading-relaxed border-t border-slate-900">
       {/* Main Footer Links */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-12">
-          {/* Brand & Language */}
-          <div className="col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-              <div className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center text-white font-bold">
+        
+        {/* Top Company Identity & Licensing Row */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 mb-12 border-b border-slate-900 items-start">
+          
+          {/* Brand & Address */}
+          <div className="lg:col-span-5 space-y-4">
+            <Link href="/" className="flex items-center gap-3 group cursor-pointer">
+              <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform">
                 N
               </div>
-              <span className="text-xl font-extrabold text-white tracking-tight">
-                Nusan<span className="text-red-500">dana</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-2xl font-black text-white tracking-wider">
+                  NUSAN<span className="text-red-500">DANA</span>
+                </span>
+                <span className="text-[10px] text-slate-400 font-semibold tracking-widest uppercase">
+                  PT Gerbang Pembayaran Digital
+                </span>
+              </div>
             </Link>
 
-            <div className="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-slate-300 font-medium">
-              <span className="text-sm">🇮🇩</span>
-              <span>Indonesia</span>
+            <div className="flex items-start gap-2.5 text-slate-300 pt-2">
+              <MapPin className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+              <div className="space-y-1 text-xs leading-normal">
+                <p className="font-bold text-white">Alamat Kantor Pusat Nusandana:</p>
+                <p className="text-slate-400">
+                  Menara Nusandana Lt. 12, Jl. H. R. Rasuna Said Blok X-5 Kav. 13, Kuningan Barat, Jakarta Selatan 12950, Indonesia.
+                </p>
+              </div>
             </div>
 
-            <p className="text-slate-500 text-xs">
-              Infrastruktur pembayaran digital terdepan untuk bisnis di Indonesia dan Asia Tenggara.
-            </p>
+            {/* Official Support Numbers */}
+            <div className="pt-2 space-y-1.5">
+              <p className="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Layanan Contact Us & Nomor Resmi Nusandana:</p>
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href="https://wa.me/6289666888288"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white hover:border-red-500 transition-all font-mono font-semibold"
+                >
+                  <Phone className="w-3.5 h-3.5 text-emerald-400" /> +62 896-6688-8288
+                </a>
+                <a
+                  href="https://wa.me/6289666888788"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white hover:border-red-500 transition-all font-mono font-semibold"
+                >
+                  <Phone className="w-3.5 h-3.5 text-emerald-400" /> +62 896-6688-8788
+                </a>
+              </div>
+            </div>
           </div>
 
+          {/* Social Media & Contact Us Info */}
+          <div className="lg:col-span-4 space-y-3">
+            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Contact Us & Media Sosial</h4>
+            <p className="text-slate-400 text-xs">
+              Hubungi tim kami atau ikuti media sosial resmi Nusandana untuk update layanan terbaru:
+            </p>
+            <div className="space-y-2 pt-1 font-medium">
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-red-400 shrink-0" />
+                <span className="text-slate-300">Email: <a href="mailto:support@nusandana.id" className="text-red-400 hover:underline">support@nusandana.id</a></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span className="text-slate-300">WhatsApp Support: <strong className="text-white">+62 896-6688-8288</strong></span>
+              </div>
+            </div>
+
+            <div className="pt-2">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">Sosial Media Resmi:</span>
+              <div className="flex items-center gap-2 text-xs font-semibold">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                  Instagram
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                  TikTok
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                  Facebook
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Licensing & Regulatory Badges (Bank Indonesia, ASPI, APPU I) */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Lisensi & Regulasi Resmi</h4>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-lg bg-red-600/20 border border-red-500/30 flex items-center justify-center font-bold text-red-400 text-xs shrink-0">
+                  BI
+                </div>
+                <div>
+                  <p className="font-bold text-white text-xs">Bank Indonesia (BI)</p>
+                  <p className="text-[10px] text-slate-400">Terlisensi & Diawasi Pembayaran Digital</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 pt-2 border-t border-slate-800">
+                <div className="w-9 h-9 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center font-bold text-blue-400 text-xs shrink-0">
+                  ASPI
+                </div>
+                <div>
+                  <p className="font-bold text-white text-xs">Anggota ASPI</p>
+                  <p className="text-[10px] text-slate-400">Asosiasi Sistem Pembayaran Indonesia</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 pt-2 border-t border-slate-800">
+                <div className="w-9 h-9 rounded-lg bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-xs shrink-0">
+                  APPU
+                </div>
+                <div>
+                  <p className="font-bold text-white text-xs">Kepatuhan APPU I</p>
+                  <p className="text-[10px] text-slate-400">Standar Keamanan Transaksi Nasional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Footer Navigation Columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 mb-12">
           {/* Produk */}
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Produk</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Payments</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">In-person Payments</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Subscriptions</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Batch Payouts</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Automated Payouts</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Cross Border</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Expense Management</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Kanal Pembayaran</Link></li>
+              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
+              <li><Link href="/payments?cat=va" className="hover:text-red-400 transition-colors cursor-pointer">Virtual Account Multi-Bank</Link></li>
+              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Instant & E-Wallet</Link></li>
+              <li><Link href="/payments?cat=all" className="hover:text-red-400 transition-colors cursor-pointer">Disbursement & Payouts</Link></li>
             </ul>
           </div>
 
           {/* Solusi */}
           <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Solusi</h4>
+            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Solusi Program</h4>
             <ul className="space-y-2 font-medium text-slate-400">
               <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer font-semibold text-red-400">Program Support UMKM</Link></li>
+              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Settlement H+0 Instan</Link></li>
               <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">E-Commerce</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">SaaS & Digital</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Integrasi POS & Toko Online</Link></li>
             </ul>
           </div>
 
           {/* Panduan */}
           <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Panduan</h4>
+            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Panduan & Support</h4>
             <ul className="space-y-2 font-medium text-slate-400">
               <li><Link href="/program-support/artikel" className="hover:text-red-400 transition-colors cursor-pointer">Blog & Artikel UMKM</Link></li>
-              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Events</Link></li>
-              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Pusat Bantuan</Link></li>
-              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Dokumentasi API</Link></li>
+              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Program Kemitraan</Link></li>
+              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Pusat Bantuan Customer Care</Link></li>
+              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Tutorial Penggunaan App</Link></li>
             </ul>
           </div>
 
@@ -72,31 +177,30 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Perusahaan</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support/artikel" className="hover:text-red-400 transition-colors cursor-pointer">Portal Berita</Link></li>
-              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Mitra Kami</Link></li>
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Tentang Kami</Link></li>
-              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Karir</Link></li>
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Lisensi BI</Link></li>
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Kebijakan Privasi</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Tentang Nusandana</Link></li>
+              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Kerja Sama Mitra</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Lisensi Bank Indonesia</Link></li>
+              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Kontak & Alamat Kantor</Link></li>
+              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Kebijakan Privasi & Syarat</Link></li>
             </ul>
           </div>
         </div>
 
-        {/* Security & Licensing Badges */}
+        {/* Security & Licensing Copyright Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-wrap items-center justify-between gap-6">
           <p className="text-slate-500 font-medium">
-            &copy; 2026 Nusandana (PT Nusandana Digital Pembayaran). Hak cipta dilindungi undang-undang.
+            &copy; 2026 Nusandana (PT Gerbang Pembayaran Digital). Hak cipta dilindungi undang-undang.
           </p>
 
           <div className="flex items-center gap-4 text-slate-400 font-semibold">
             <Link href="/" className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer">
-              <Globe className="w-3.5 h-3.5" /> Portal Web
-            </Link>
-            <Link href="/mitra" className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer">
-              <MessageCircle className="w-3.5 h-3.5" /> Komunitas
+              <Globe className="w-3.5 h-3.5" /> Portal Web Nusandana
             </Link>
             <Link href="/kontak" className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer">
-              <Mail className="w-3.5 h-3.5" /> Kontak
+              <MessageCircle className="w-3.5 h-3.5" /> WhatsApp Support
+            </Link>
+            <Link href="/kontak" className="hover:text-white transition-colors flex items-center gap-1 cursor-pointer">
+              <Mail className="w-3.5 h-3.5" /> Email Official
             </Link>
           </div>
         </div>
@@ -107,7 +211,7 @@ export default function Footer() {
         <div className="container mx-auto flex items-center gap-3">
           <ShieldAlert className="w-5 h-5 text-amber-400 flex-shrink-0" />
           <p className="leading-tight">
-            <strong className="text-amber-400 font-bold">Waspadalah terhadap Upaya Penipuan!</strong> Nusandana adalah perusahaan penyedia gerbang pembayaran resmi dan tidak pernah meminta kata sandi, OTP, atau memberikan penawaran investasi perorangan. Jika Anda menemukan aktivitas mencurigakan, segera laporkan ke WhatsApp resmi kami di <span className="underline">+62 813-8474-8739</span>.
+            <strong className="text-amber-400 font-bold">Waspadalah terhadap Upaya Penipuan!</strong> Nusandana (PT Gerbang Pembayaran Digital) adalah penyedia gerbang pembayaran resmi dan tidak pernah meminta kata sandi, OTP, atau memberikan penawaran investasi perorangan. Jika menemukan aktivitas mencurigakan, hubungi WhatsApp resmi kami di <span className="underline font-bold text-amber-300">+62 896-6688-8288</span> atau <span className="underline font-bold text-amber-300">+62 896-6688-8788</span>.
           </p>
         </div>
       </div>

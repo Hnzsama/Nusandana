@@ -14,13 +14,13 @@ export default function CTASection() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
               <span className="text-xs font-bold uppercase tracking-wider text-red-600">
-                Lorem ipsum dolor sit amet
+                Konsultasi & Integrasi Gratis
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
-                Consectetur adipiscing elit sed do eiusmod!
+                Siap Mengembangkan Transaksi Bisnis Anda Bersama Nusandana?
               </h2>
-              <p className="text-gray-600 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="text-gray-600 text-base font-medium">
+                Hubungi tim spesialis gerbang pembayaran kami untuk mendapatkan solusi transaksi terbaik, bantuan integrasi API, dan penawaran khusus UMKM.
               </p>
             </div>
 
@@ -29,9 +29,9 @@ export default function CTASection() {
                 <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-bold">
                   <PhoneCall className="w-5 h-5" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-lg">Lorem Sales</h3>
+                <h3 className="font-bold text-gray-900 text-lg">Tim Sales Nusandana</h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                  Konsultasi skema pembayaran & kemitraan: <span className="font-bold text-red-600">+62 896-6688-8288</span>
                 </p>
               </div>
 
@@ -39,19 +39,19 @@ export default function CTASection() {
                 <div className="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-bold">
                   <Headphones className="w-5 h-5" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-lg">Dolor Support</h3>
+                <h3 className="font-bold text-gray-900 text-lg">Customer Support 24/7</h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Lorem ipsum dolor sit amet: <span className="font-semibold text-red-600">+62 800-0000-0000</span> atau <span className="font-semibold text-red-600">lorem@ipsum.com</span>
+                  Layanan bantuan teknis: <span className="font-bold text-red-600">+62 896-6688-8788</span> atau <span className="font-bold text-red-600">support@nusandana.id</span>
                 </p>
               </div>
             </div>
 
             <div>
               <a
-                href="#sales"
+                href="/kontak"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-base shadow-lg shadow-red-600/30 hover:shadow-xl transition-all cursor-pointer"
               >
-                Lorem Ipsum <ArrowRight className="w-5 h-5" />
+                Hubungi Tim Nusandana <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>

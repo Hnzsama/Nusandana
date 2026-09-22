@@ -9,7 +9,7 @@ export default function PartnerLogos() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll animation="fade-in">
           <p className="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">
-            DIPERCAYA OLEH 500.000+ BISNIS & MITRA TERKEMUKA
+            DIPERCAYA OLEH 500.000+ MERCHANT & MITRA KEMITRAAN NUSANDANA
           </p>
 
           {/* Logo Grid matching user screenshot */}
