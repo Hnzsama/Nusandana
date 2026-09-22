@@ -52,7 +52,6 @@ export default function Footer() {
             <ul className="space-y-2 font-medium text-slate-400">
               <li><Link href="/program-support" className="hover:text-blue-400 transition-colors cursor-pointer font-semibold text-blue-400">Program Support UMKM</Link></li>
               <li><Link href="/program-support/payment-links" className="hover:text-blue-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
-              <li><Link href="/program-support/pembiayaan" className="hover:text-blue-400 transition-colors cursor-pointer">Pembiayaan Modal Usaha</Link></li>
               <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">E-Commerce</Link></li>
               <li><Link href="/payments" className="hover:text-blue-400 transition-colors cursor-pointer">SaaS & Digital</Link></li>
             </ul>

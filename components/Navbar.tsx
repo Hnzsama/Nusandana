@@ -28,7 +28,6 @@ export default function Navbar() {
       items: [
         { name: "Program Support Hub", href: "/program-support" },
         { name: "Solusi Payment Links UMKM", href: "/program-support/payment-links" },
-        { name: "Pembiayaan Modal Usaha", href: "/program-support/pembiayaan" },
         { name: "Artikel & Panduan UMKM", href: "/program-support/artikel" },
       ],
     },

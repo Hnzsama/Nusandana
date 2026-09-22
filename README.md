@@ -27,7 +27,6 @@ Nusandana Web Structure
 ├── 🤝 Support UMKM ( /program-support )
 │   ├── Program Support Hub ( /program-support )
 │   ├── Solusi Payment Links ( /program-support/payment-links )
-│   ├── Pembiayaan Modal Usaha ( /program-support/pembiayaan )
 │   └── Blog & Artikel UMKM ( /program-support/artikel )
 ├── 🏢 Kerja Sama Mitra ( /mitra )
 ├── 🛡️ Lisensi BI & Legal ( /lisensi )
@@ -64,7 +63,6 @@ Halaman khusus matriks penerimaan pembayaran terlengkap dengan filter interaktif
 Pusat solusi digital dan pemberdayaan bagi Usaha Mikro, Kecil, dan Menengah (UMKM):
 * **Program Support Hub (`/program-support`)**: Halaman induk yang mengintegrasikan seluruh fasilitas bantuan digitalisasi UMKM.
 * **Payment Links (`/program-support/payment-links`)**: Fitur pembuatan link pembayaran instan tanpa memerlukan pemograman/coding untuk jualan di WhatsApp, Instagram, dan Toko Online.
-* **Pembiayaan Modal Usaha (`/program-support/pembiayaan`)**: Fasilitas pengajuan modal kerja tambahan dengan proses cepat dan bunga kompetitif.
 * **Blog & Artikel UMKM (`/program-support/artikel`)**: Edukasi bisnis, panduan pembayaran, daftar isi interaktif, dan tombol langganan newsletter dengan kontras tinggi.
 
 ---
