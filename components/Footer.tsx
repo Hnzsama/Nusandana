@@ -2,7 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { ShieldAlert, Globe, Mail, MessageCircle, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
+import { ShieldAlert, Globe, Mail, MessageCircle, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,7 +18,13 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-3 group cursor-pointer">
               <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform">
-                N
+                <svg
+                  className="w-6 h-6 fill-current text-white"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-white tracking-wider">
@@ -83,29 +90,36 @@ export default function Footer() {
             <div className="pt-2">
               <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">Sosial Media Resmi:</span>
               <div className="flex items-center gap-2 text-xs font-semibold">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
                   Instagram
                 </a>
-                <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
                   TikTok
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
                   Facebook
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors">
+                <a href="https://youtube.com" target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 hover:border-red-500 text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
                   YouTube
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Licensing & Regulatory Badges (Bank Indonesia, ASPI, APPU I) */}
+          {/* Licensing & Regulatory Badges (Bank Indonesia, ASPI, APPUI logos from public/logo) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Lisensi & Regulasi Resmi</h4>
-            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+            <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3.5">
+              
+              {/* Bank Indonesia Logo */}
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-lg bg-red-600/20 border border-red-500/30 flex items-center justify-center font-bold text-red-400 text-xs shrink-0">
-                  BI
+                <div className="w-12 h-10 rounded-lg bg-slate-800/80 p-1 flex items-center justify-center shrink-0 border border-slate-700">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/logo/Bank Indonesia Logo - White - zonalogo.com.png"
+                    alt="Logo Bank Indonesia"
+                    className="max-h-7 w-auto object-contain"
+                  />
                 </div>
                 <div>
                   <p className="font-bold text-white text-xs">Bank Indonesia (BI)</p>
@@ -113,9 +127,15 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pt-2 border-t border-slate-800">
-                <div className="w-9 h-9 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center font-bold text-blue-400 text-xs shrink-0">
-                  ASPI
+              {/* ASPI Logo */}
+              <div className="flex items-center gap-3 pt-2.5 border-t border-slate-800">
+                <div className="w-12 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 border border-slate-700">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/logo/aspi-logo.png"
+                    alt="Logo ASPI"
+                    className="max-h-7 w-auto object-contain"
+                  />
                 </div>
                 <div>
                   <p className="font-bold text-white text-xs">Anggota ASPI</p>
@@ -123,15 +143,22 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pt-2 border-t border-slate-800">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600/20 border border-emerald-500/30 flex items-center justify-center font-bold text-emerald-400 text-xs shrink-0">
-                  APPU
+              {/* APPUI Logo */}
+              <div className="flex items-center gap-3 pt-2.5 border-t border-slate-800">
+                <div className="w-12 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 border border-slate-700">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/logo/Logo_APPUI.png"
+                    alt="Logo APPUI"
+                    className="max-h-7 w-auto object-contain"
+                  />
                 </div>
                 <div>
-                  <p className="font-bold text-white text-xs">Kepatuhan APPU I</p>
-                  <p className="text-[10px] text-slate-400">Standar Keamanan Transaksi Nasional</p>
+                  <p className="font-bold text-white text-xs">Anggota APPUI</p>
+                  <p className="text-[10px] text-slate-400">Asosiasi Penyelenggara Pengiriman Uang Indonesia</p>
                 </div>
               </div>
+
             </div>
           </div>
 
