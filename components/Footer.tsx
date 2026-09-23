@@ -17,15 +17,12 @@ export default function Footer() {
           {/* Brand & Address */}
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-3 group cursor-pointer">
-              <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform">
-                <svg
-                  className="w-6 h-6 fill-current text-white"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/favicon/apple-touch-icon.png"
+                alt="Logo Nusandana"
+                className="w-10 h-10 object-contain rounded-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform"
+              />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-white tracking-wider">
                   NUSAN<span className="text-red-500">DANA</span>

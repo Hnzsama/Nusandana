@@ -54,15 +54,12 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group cursor-pointer">
-          <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white font-bold shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
-            <svg
-              className="w-6 h-6 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/favicon/apple-touch-icon.png"
+            alt="Logo Nusandana"
+            className="w-10 h-10 object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform"
+          />
           <span className="text-2xl font-black tracking-tight text-gray-900">
             Nusan<span className="text-red-600">dana</span>
           </span>
