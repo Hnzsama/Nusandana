@@ -145,12 +145,12 @@ export default function Footer() {
 
               {/* APPUI Logo */}
               <div className="flex items-center gap-3 pt-2.5 border-t border-slate-800">
-                <div className="w-12 h-10 rounded-lg bg-white p-1 flex items-center justify-center shrink-0 border border-slate-700">
+                <div className="w-12 h-10 rounded-lg bg-slate-950 p-0.5 flex items-center justify-center shrink-0 border border-slate-700 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/logo/Logo_APPUI.png"
                     alt="Logo APPUI"
-                    className="max-h-7 w-auto object-contain"
+                    className="w-full h-full object-contain scale-110"
                   />
                 </div>
                 <div>
