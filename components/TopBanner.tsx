@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { Globe, X } from "lucide-react";
 
 export default function TopBanner() {
@@ -72,20 +73,20 @@ export default function TopBanner() {
 
         {/* Right: Daftar | Login | Support */}
         <div className="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
-          <a
-            href="/kontak"
+          <Link
+            href="/register"
             className="px-3 py-1 bg-white text-red-600 rounded-md font-bold hover:bg-red-50 transition-colors cursor-pointer shadow-xs"
           >
             Daftar
-          </a>
+          </Link>
           <span className="opacity-40">|</span>
-          <a href="/kontak" className="hover:text-red-100 transition-colors cursor-pointer">
+          <Link href="/login" className="hover:text-red-100 transition-colors cursor-pointer">
             Login
-          </a>
+          </Link>
           <span className="opacity-40">|</span>
-          <a href="/kontak" className="hover:text-red-100 transition-colors cursor-pointer">
+          <Link href="/kontak" className="hover:text-red-100 transition-colors cursor-pointer">
             Support
-          </a>
+          </Link>
           <span className="opacity-40 hidden sm:inline">|</span>
           <div className="hidden sm:flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-full backdrop-blur-xs">
             <Globe className="w-3.5 h-3.5" />

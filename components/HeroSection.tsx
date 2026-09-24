@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
-import { ArrowRight, ShieldCheck, Zap, Sparkles, CheckCircle2, Lock } from "lucide-react";
+import { ArrowRight, ShieldCheck, Zap, CreditCard, CheckCircle2, Lock } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -20,7 +20,7 @@ export default function HeroSection() {
           <div className="lg:col-span-7 text-center lg:text-left">
             <AnimateOnScroll animation="fade-up">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/90 border border-red-200 text-red-700 text-xs font-semibold uppercase tracking-wider mb-6 shadow-xs">
-                <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Digital
+                <CreditCard className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Digital
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.15]">
