@@ -25,7 +25,7 @@ export default function PartnerLogos() {
             {mitraImages.map((mitra, idx) => (
               <div
                 key={idx}
-                className="h-20 w-full max-w-[200px] p-3 bg-white border border-gray-200/90 rounded-2xl flex items-center justify-center grayscale hover:grayscale-0 opacity-85 hover:opacity-100 transition-all duration-300 transform hover:scale-105 cursor-pointer shadow-xs hover:shadow-md"
+                className="h-20 w-full max-w-[200px] p-3 bg-white border border-gray-200/90 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-105 cursor-pointer shadow-xs hover:shadow-md"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
