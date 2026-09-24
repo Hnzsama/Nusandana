@@ -21,7 +21,7 @@ export default function Home() {
     "description": "Infrastruktur pembayaran digital dan payment gateway terdepan di Indonesia.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Jakarta",
+      "addressLocality": "Batam, Kepulauan Riau",
       "addressCountry": "ID"
     },
     "sameAs": [

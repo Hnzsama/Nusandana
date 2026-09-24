@@ -24,7 +24,7 @@ export default function KontakPage() {
                 Hubungi Tim Spesialis <span className="text-red-600">Nusandana</span>
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tim kami siap memberikan konsultasi integrasi gratis untuk bisnis Anda.
+                Tim spesialis Nusandana siap memberikan konsultasi gratis dan bantuan integrasi gerbang pembayaran digital untuk mendukung kemajuan bisnis Anda.
               </p>
             </AnimateOnScroll>
           </div>
@@ -41,9 +41,11 @@ export default function KontakPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-base">Alamat Kantor Pusat</h4>
-                    <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                      PT Gerbang Pembayaran Digital (Nusandana)<br />
-                      Menara Nusandana Lt. 12, Jl. H. R. Rasuna Said, Kuningan Barat, Jakarta Selatan 12950
+                    <p className="text-sm font-semibold text-gray-900 mt-1">
+                      PT Gerbang Pembayaran Digital (Nusandana)
+                    </p>
+                    <p className="text-xs text-gray-600 mt-1 leading-relaxed">
+                      Bengkong Harapan I Blok K No 8, Kel. Bengkong Indah, Kec. Bengkong, Kota Batam, Kepulauan Riau.
                     </p>
                   </div>
                 </div>
@@ -56,8 +58,10 @@ export default function KontakPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-base">Email Layanan Resmi</h4>
-                    <p className="text-sm text-gray-600 mt-1">support@nusandana.id</p>
-                    <p className="text-sm text-gray-600">info@nusandana.id</p>
+                    <p className="text-sm font-bold text-red-600 mt-1">
+                      <a href="mailto:bisnis@nusandana.co.id" className="hover:underline">bisnis@nusandana.co.id</a>
+                    </p>
+                    <p className="text-xs text-gray-500 mt-0.5">Dukungan Pertanyaan Kemitraan & Integrasi System</p>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -69,9 +73,25 @@ export default function KontakPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-base">Nomor Resmi Nusandana</h4>
-                    <p className="text-sm font-bold text-gray-900 mt-1">+62 896-6688-8288</p>
-                    <p className="text-sm font-bold text-gray-900">+62 896-6688-8788</p>
-                    <p className="text-xs text-gray-500 mt-1">Layanan Customer Care & Support 24 Jam Nonstop</p>
+                    <div className="mt-2 space-y-1">
+                      <a
+                        href="https://wa.me/6289666888288"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-bold text-gray-900 hover:text-red-600 transition-colors block"
+                      >
+                        +62 896-6688-8288 (WhatsApp Official)
+                      </a>
+                      <a
+                        href="https://wa.me/6289666888788"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-bold text-gray-900 hover:text-red-600 transition-colors block"
+                      >
+                        +62 896-6688-8788 (WhatsApp Official)
+                      </a>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-1.5">Layanan Customer Care & Support 24 Jam Nonstop</p>
                   </div>
                 </div>
               </AnimateOnScroll>
