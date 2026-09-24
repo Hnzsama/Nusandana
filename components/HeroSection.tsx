@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { ArrowRight, ShieldCheck, Zap, Sparkles, CheckCircle2, Lock } from "lucide-react";
@@ -32,7 +33,7 @@ export default function HeroSection() {
 
             <AnimateOnScroll animation="fade-up" delay={100}>
               <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                Kelola transaksi bisnis Anda dengan solusi pembayaran digital dengan Nusandana — solusi pembayaran dari <strong className="text-gray-900 font-semibold">PT Gerbang Pembayaran Digital</strong>. Terima pembayaran, pantau transaksi, dan nikmati proses settlement yang praktis dalam satu ekosistem yang dirancang untuk membantu bisnis Anda berkembang.
+                Kelola transaksi bisnis anda dengan solusi pembayaran digital dengan Nusandana — solusi pembayaran dari <strong className="text-gray-900 font-semibold">PT Gerbang Pembayaran Digital</strong>. Terima pembayaran, pantau transaksi, dan nikmati proses settlement yang praktis dalam satu ekosistem yang dirancang untuk membantu bisnis Anda berkembang.
               </p>
             </AnimateOnScroll>
 
@@ -111,11 +112,15 @@ export default function HeroSection() {
                     <span className="text-xs font-mono text-gray-400">dashboard.paymentapp.co</span>
                   </div>
 
-                  <ImagePlaceholder
-                    label="Dashboard Analytics & Payment Flow Preview"
-                    height="h-[320px]"
-                    className="w-full rounded-xl shadow-inner object-cover"
-                  />
+                  <div className="relative w-full h-[320px] rounded-xl overflow-hidden shadow-inner">
+                    <Image
+                      src="/hero/WhatsApp Image 2026-09-23 at 10.16.39 PM.jpeg"
+                      alt="Solusi Pembayaran Digital Dashboard Preview"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
                 </div>
 
               </div>

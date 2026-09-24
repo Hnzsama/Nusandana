@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { ArrowRight, PhoneCall, Headphones } from "lucide-react";
-import ImagePlaceholder from "./ImagePlaceholder";
 
 export default function CTASection() {
   return (
@@ -41,7 +41,7 @@ export default function CTASection() {
                 </div>
                 <h3 className="font-bold text-gray-900 text-lg">Customer Support 24/7</h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Layanan bantuan teknis: <span className="font-bold text-red-600">+62 896-6688-8788</span> atau <span className="font-bold text-red-600">support@nusandana.id</span>
+                  Layanan bantuan teknis: <span className="font-bold text-red-600">+62 896-6688-8788</span> atau <span className="font-bold text-red-600">bisnis@nusandana.co.id</span>
                 </p>
               </div>
             </div>
@@ -58,7 +58,14 @@ export default function CTASection() {
 
           {/* Right Image Feature with Fallback */}
           <div className="lg:col-span-5 relative cursor-pointer">
-            <ImagePlaceholder label="Lorem Placeholder" height="h-[380px]" />
+            <div className="relative w-full h-[380px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+              <Image
+                src="/hero/WhatsApp Image 2026-09-23 at 10.16.39 PM.jpeg"
+                alt="Solusi Pembayaran Digital Nusandana"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
         </div>

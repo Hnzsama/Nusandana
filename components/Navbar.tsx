@@ -54,22 +54,16 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group cursor-pointer">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/favicon/apple-touch-icon.png"
-            alt="Logo Nusandana"
-            className="w-10 h-10 object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform"
-          />
           <span className="text-2xl font-black tracking-tight text-gray-900">
             Nusan<span className="text-red-600">dana</span>
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-1 font-semibold text-sm text-gray-700">
+        <nav className="hidden xl:flex items-center gap-1 font-semibold text-xs xl:text-sm text-gray-700">
           <Link
             href="/"
-            className="px-3.5 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
+            className="px-3 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
           >
             Beranda
           </Link>
@@ -83,11 +77,11 @@ export default function Navbar() {
             >
               <Link
                 href={item.href}
-                className="flex items-center gap-1 px-3.5 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
+                className="flex items-center gap-1 px-3 py-2 rounded-lg hover:text-red-600 hover:bg-red-50/50 transition-colors cursor-pointer"
               >
                 {item.label}
                 {item.hasDropdown && (
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180 text-red-600" : "text-gray-400"}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180 text-red-600" : "text-gray-400"}`} />
                 )}
               </Link>
 
@@ -110,7 +104,7 @@ export default function Navbar() {
         </nav>
 
         {/* Action Buttons */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <Link
             href="/kontak"
             className="px-4 py-2.5 rounded-xl border border-red-600 text-red-600 font-bold text-sm hover:bg-red-50 transition-all cursor-pointer"
@@ -128,7 +122,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Menu button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 rounded-xl text-gray-700 hover:bg-gray-100 cursor-pointer"
+          className="xl:hidden p-2 rounded-xl text-gray-700 hover:bg-gray-100 cursor-pointer"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -137,7 +131,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+        <div className="xl:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
           <Link
             href="/"
             className="block font-bold text-gray-900 py-2 border-b border-gray-100"

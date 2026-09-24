@@ -70,21 +70,21 @@ export default function TopBanner() {
           </div>
         </div>
 
-        {/* Right: Login | Support | Daftar */}
+        {/* Right: Daftar | Login | Support */}
         <div className="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+          <a
+            href="/kontak"
+            className="px-3 py-1 bg-white text-red-600 rounded-md font-bold hover:bg-red-50 transition-colors cursor-pointer shadow-xs"
+          >
+            Daftar
+          </a>
+          <span className="opacity-40">|</span>
           <a href="/kontak" className="hover:text-red-100 transition-colors cursor-pointer">
             Login
           </a>
           <span className="opacity-40">|</span>
           <a href="/kontak" className="hover:text-red-100 transition-colors cursor-pointer">
             Support
-          </a>
-          <span className="opacity-40">|</span>
-          <a
-            href="/kontak"
-            className="px-3 py-1 bg-white text-red-600 rounded-md font-bold hover:bg-red-50 transition-colors cursor-pointer shadow-xs"
-          >
-            Daftar
           </a>
           <span className="opacity-40 hidden sm:inline">|</span>
           <div className="hidden sm:flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-full backdrop-blur-xs">

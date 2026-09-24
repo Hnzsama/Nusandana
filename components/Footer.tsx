@@ -17,18 +17,9 @@ export default function Footer() {
           {/* Brand & Address */}
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-3 group cursor-pointer">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/favicon/apple-touch-icon.png"
-                alt="Logo Nusandana"
-                className="w-10 h-10 object-contain rounded-xl shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform"
-              />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-white tracking-wider">
                   NUSAN<span className="text-red-500">DANA</span>
-                </span>
-                <span className="text-[10px] text-slate-400 font-semibold tracking-widest uppercase">
-                  PT Gerbang Pembayaran Digital
                 </span>
               </div>
             </Link>
@@ -38,7 +29,7 @@ export default function Footer() {
               <div className="space-y-1 text-xs leading-normal">
                 <p className="font-bold text-white">Alamat Kantor Pusat Nusandana:</p>
                 <p className="text-slate-400">
-                  Menara Nusandana Lt. 12, Jl. H. R. Rasuna Said Blok X-5 Kav. 13, Kuningan Barat, Jakarta Selatan 12950, Indonesia.
+                  Bengkong Harapan I Blok K No 8, Kel. Bengkong Indah, Kec. Bengkong, Kota Batam, Kepulauan Riau.
                 </p>
               </div>
             </div>
@@ -76,7 +67,7 @@ export default function Footer() {
             <div className="space-y-2 pt-1 font-medium">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-red-400 shrink-0" />
-                <span className="text-slate-300">Email: <a href="mailto:support@nusandana.id" className="text-red-400 hover:underline">support@nusandana.id</a></span>
+                <span className="text-slate-300">Email: <a href="mailto:bisnis@nusandana.co.id" className="text-red-400 hover:underline">bisnis@nusandana.co.id</a></span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0" />
