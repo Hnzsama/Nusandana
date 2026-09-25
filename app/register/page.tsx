@@ -15,7 +15,7 @@ export default function RegisterPage() {
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-center py-4">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-sm">
             <RegisterForm />
           </div>
         </div>

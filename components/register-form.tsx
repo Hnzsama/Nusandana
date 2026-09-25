@@ -2,168 +2,123 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Eye, EyeOff } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 export function RegisterForm({
   className,
   ...props
 }: React.ComponentProps<"form">) {
   const [merchantType, setMerchantType] = useState<"individu" | "badan_hukum">("badan_hukum");
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 sm:p-8 w-full max-w-md mx-auto">
-      <h1 className="text-2xl font-bold text-gray-900 text-center mb-6">
-        Daftar
-      </h1>
+    <form className={cn("flex flex-col gap-5", className)} onSubmit={(e) => e.preventDefault()} {...props}>
+      <FieldGroup className="space-y-3.5">
+        <div className="flex flex-col items-center sm:items-start gap-1 text-center sm:text-left">
+          <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight">Daftar Akun Merchant</h1>
+          <p className="text-xs sm:text-sm text-gray-500">
+            Registrasi gratis untuk mulai menerima pembayaran digital
+          </p>
+        </div>
 
-      <form className={cn("space-y-4", className)} onSubmit={(e) => e.preventDefault()} {...props}>
-        {/* Kategori Merchant Radio Group */}
-        <div className="space-y-2">
-          <label className="block text-xs font-semibold text-gray-700">
-            Kategori Merchant
-          </label>
-          <div className="flex items-center gap-4 pt-1">
-            <label className="flex items-center gap-2 text-xs font-medium text-gray-700 cursor-pointer">
+        {/* Tipe Akun Merchant Radio */}
+        <Field className="space-y-1.5">
+          <FieldLabel className="text-xs font-bold uppercase text-gray-700">Tipe Akun Merchant</FieldLabel>
+          <div className="grid grid-cols-2 gap-2 pt-0.5">
+            <label className={cn(
+              "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all",
+              merchantType === "individu"
+                ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
+                : "border-gray-200 text-gray-700 hover:bg-gray-50"
+            )}>
               <input
                 type="radio"
                 name="merchantType"
                 value="individu"
                 checked={merchantType === "individu"}
                 onChange={() => setMerchantType("individu")}
-                className="w-4 h-4 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
+                className="w-3.5 h-3.5 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
               />
               Merchant Individu
             </label>
-            <label className="flex items-center gap-2 text-xs font-medium text-gray-700 cursor-pointer">
+            <label className={cn(
+              "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all",
+              merchantType === "badan_hukum"
+                ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
+                : "border-gray-200 text-gray-700 hover:bg-gray-50"
+            )}>
               <input
                 type="radio"
                 name="merchantType"
                 value="badan_hukum"
                 checked={merchantType === "badan_hukum"}
                 onChange={() => setMerchantType("badan_hukum")}
-                className="w-4 h-4 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
+                className="w-3.5 h-3.5 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
               />
-              Merchant badan hukum ( PT,CV )
+              Badan Hukum (PT/CV)
             </label>
           </div>
-        </div>
+        </Field>
 
-        {/* Nama Pengguna */}
-        <div className="space-y-1">
-          <label htmlFor="username" className="block text-xs font-semibold text-gray-700">
-            <span className="text-red-500 font-bold mr-1">*</span>
-            Nama Pengguna
-          </label>
-          <input
-            id="username"
-            type="text"
-            placeholder="Masukkan nama pengguna"
-            required
-            className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-gray-200 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-gray-900 placeholder:text-gray-400 bg-gray-50/30 transition-all"
-          />
-        </div>
+        {/* Nama Lengkap */}
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="fullname" className="text-xs font-bold uppercase text-gray-700">Nama Lengkap</FieldLabel>
+          <Input id="fullname" type="text" placeholder="Masukkan nama lengkap Anda" required className="rounded-xl py-2.5" />
+        </Field>
 
-        {/* Nomor Telepon */}
-        <div className="space-y-1">
-          <label htmlFor="phone" className="block text-xs font-semibold text-gray-700">
-            <span className="text-red-500 font-bold mr-1">*</span>
-            Nomor Telepon
-          </label>
-          <input
-            id="phone"
-            type="tel"
-            placeholder="Masukkan nomor telepon"
-            required
-            className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-gray-200 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-gray-900 placeholder:text-gray-400 bg-gray-50/30 transition-all"
-          />
-        </div>
+        {/* Nama Perusahaan / Bisnis */}
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="business_name" className="text-xs font-bold uppercase text-gray-700">Nama Perusahaan / Bisnis</FieldLabel>
+          <Input id="business_name" type="text" placeholder="Contoh: Toko Kopi Utama" required className="rounded-xl py-2.5" />
+        </Field>
 
-        {/* Email */}
-        <div className="space-y-1">
-          <label htmlFor="email" className="block text-xs font-semibold text-gray-700">
-            <span className="text-red-500 font-bold mr-1">*</span>
-            Email
-          </label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Masukkan email"
-            required
-            className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-gray-200 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-gray-900 placeholder:text-gray-400 bg-gray-50/30 transition-all"
-          />
-        </div>
+        {/* Email Perusahaan */}
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="email" className="text-xs font-bold uppercase text-gray-700">Email Perusahaan</FieldLabel>
+          <Input id="email" type="email" placeholder="nama@perusahaan.com" required className="rounded-xl py-2.5" />
+        </Field>
 
-        {/* Atur Kata Sandi */}
-        <div className="space-y-1">
-          <label htmlFor="password" className="block text-xs font-semibold text-gray-700">
-            <span className="text-red-500 font-bold mr-1">*</span>
-            Atur Kata Sandi
-          </label>
-          <div className="relative">
-            <input
-              id="password"
-              type={showPassword ? "text" : "password"}
-              placeholder="Masukkan kata sandi 6-20 karakter, hanya boleh berisi huruf, angka, dan garis..."
-              required
-              className="w-full pl-3.5 pr-10 py-2.5 text-xs rounded-lg border border-gray-200 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-gray-900 placeholder:text-gray-400 bg-gray-50/30 transition-all"
-            />
-            <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
-              aria-label="Toggle password visibility"
-            >
-              {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-            </button>
-          </div>
-        </div>
+        {/* Nomor WhatsApp / HP */}
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="phone" className="text-xs font-bold uppercase text-gray-700">Nomor WhatsApp / HP</FieldLabel>
+          <Input id="phone" type="tel" placeholder="081234567890" required className="rounded-xl py-2.5" />
+        </Field>
+
+        {/* Kata Sandi */}
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="password" className="text-xs font-bold uppercase text-gray-700">Kata Sandi</FieldLabel>
+          <Input id="password" type="password" placeholder="••••••••" required className="rounded-xl py-2.5" />
+        </Field>
 
         {/* Konfirmasi Kata Sandi */}
-        <div className="space-y-1">
-          <label htmlFor="confirmPassword" className="block text-xs font-semibold text-gray-700">
-            <span className="text-red-500 font-bold mr-1">*</span>
-            Konfirmasi Kata Sandi
-          </label>
-          <div className="relative">
-            <input
-              id="confirmPassword"
-              type={showConfirmPassword ? "text" : "password"}
-              placeholder="Masukkan kata sandi lagi"
-              required
-              className="w-full pl-3.5 pr-10 py-2.5 text-xs rounded-lg border border-gray-200 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-gray-900 placeholder:text-gray-400 bg-gray-50/30 transition-all"
-            />
-            <button
-              type="button"
-              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
-              aria-label="Toggle confirm password visibility"
-            >
-              {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-            </button>
-          </div>
-        </div>
+        <Field className="space-y-1.5">
+          <FieldLabel htmlFor="confirmPassword" className="text-xs font-bold uppercase text-gray-700">Konfirmasi Kata Sandi</FieldLabel>
+          <Input id="confirmPassword" type="password" placeholder="••••••••" required className="rounded-xl py-2.5" />
+        </Field>
 
         {/* Submit Button */}
-        <div className="pt-2">
+        <Field className="pt-2">
           <button
             type="submit"
-            className="w-full py-2.5 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm shadow-md shadow-red-600/30 transition-all cursor-pointer"
+            className="w-full py-3 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm shadow-md shadow-red-600/30 transition-all cursor-pointer"
           >
-            Daftar
+            Daftar Merchant Gratis
           </button>
-        </div>
+        </Field>
 
-        {/* Footer Link */}
-        <p className="text-center text-xs text-gray-600 pt-2">
+        <FieldDescription className="text-center text-xs text-gray-600 pt-1">
           Sudah memiliki akun Nusandana?{" "}
           <Link href="/login" className="font-bold text-red-600 hover:underline">
             Masuk ke Akun
           </Link>
-        </p>
-      </form>
-    </div>
+        </FieldDescription>
+      </FieldGroup>
+    </form>
   );
 }
