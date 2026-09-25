@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import {
   Field,
   FieldDescription,
@@ -18,8 +19,8 @@ export function RegisterForm({
   const [merchantType, setMerchantType] = useState<"individu" | "badan_hukum">("badan_hukum");
 
   return (
-    <form className={cn("flex flex-col gap-5", className)} onSubmit={(e) => e.preventDefault()} {...props}>
-      <FieldGroup className="space-y-3.5">
+    <form className={cn("flex flex-col gap-6", className)} onSubmit={(e) => e.preventDefault()} {...props}>
+      <FieldGroup className="space-y-4">
         <div className="flex flex-col items-center sm:items-start gap-1 text-center sm:text-left">
           <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight">Daftar Akun Merchant</h1>
           <p className="text-xs sm:text-sm text-gray-500">
@@ -27,42 +28,46 @@ export function RegisterForm({
           </p>
         </div>
 
-        {/* Tipe Akun Merchant Radio */}
+        {/* Tipe Akun Merchant */}
         <Field className="space-y-1.5">
           <FieldLabel className="text-xs font-bold uppercase text-gray-700">Tipe Akun Merchant</FieldLabel>
           <div className="grid grid-cols-2 gap-2 pt-0.5">
-            <label className={cn(
-              "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all",
-              merchantType === "individu"
-                ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
-                : "border-gray-200 text-gray-700 hover:bg-gray-50"
-            )}>
-              <input
-                type="radio"
-                name="merchantType"
-                value="individu"
-                checked={merchantType === "individu"}
-                onChange={() => setMerchantType("individu")}
-                className="w-3.5 h-3.5 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
-              />
+            <button
+              type="button"
+              onClick={() => setMerchantType("individu")}
+              className={cn(
+                "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer",
+                merchantType === "individu"
+                  ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
+                  : "border-gray-200 text-gray-700 hover:bg-gray-50"
+              )}
+            >
+              <span className={cn(
+                "w-3.5 h-3.5 rounded-full border flex items-center justify-center shrink-0",
+                merchantType === "individu" ? "border-red-600 bg-red-600" : "border-gray-400"
+              )}>
+                {merchantType === "individu" && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
+              </span>
               Merchant Individu
-            </label>
-            <label className={cn(
-              "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all",
-              merchantType === "badan_hukum"
-                ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
-                : "border-gray-200 text-gray-700 hover:bg-gray-50"
-            )}>
-              <input
-                type="radio"
-                name="merchantType"
-                value="badan_hukum"
-                checked={merchantType === "badan_hukum"}
-                onChange={() => setMerchantType("badan_hukum")}
-                className="w-3.5 h-3.5 text-red-600 border-gray-300 focus:ring-red-500 cursor-pointer"
-              />
+            </button>
+            <button
+              type="button"
+              onClick={() => setMerchantType("badan_hukum")}
+              className={cn(
+                "flex items-center gap-2 px-3 py-2.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer",
+                merchantType === "badan_hukum"
+                  ? "border-red-600 bg-red-50/50 text-red-600 shadow-xs"
+                  : "border-gray-200 text-gray-700 hover:bg-gray-50"
+              )}
+            >
+              <span className={cn(
+                "w-3.5 h-3.5 rounded-full border flex items-center justify-center shrink-0",
+                merchantType === "badan_hukum" ? "border-red-600 bg-red-600" : "border-gray-400"
+              )}>
+                {merchantType === "badan_hukum" && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
+              </span>
               Badan Hukum (PT/CV)
-            </label>
+            </button>
           </div>
         </Field>
 
