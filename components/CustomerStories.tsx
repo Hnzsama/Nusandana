@@ -36,7 +36,7 @@ export default function CustomerStories() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Ulasan & Review Customer <span className="text-red-600">Nusandana</span>
+              Ulasan & Review Customer <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h2>
             <p className="mt-4 text-base text-gray-600 font-medium">
               Testimoni dan pengalaman nyata para merchant serta pemilik bisnis yang bertumbuh bersama ekosistem pembayaran Nusandana.

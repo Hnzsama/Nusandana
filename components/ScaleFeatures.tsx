@@ -35,7 +35,7 @@ export default function ScaleFeatures() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Layanan & <span className="text-red-600">Dukungan Fitur Nusandana</span>
+              Layanan & Dukungan Fitur <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h2>
             <p className="mt-4 text-base text-gray-600 font-medium">
               Fasilitas lengkap pendampingan bisnis, tutorial penggunaan aplikasi, hingga layanan Customer Care yang siap membantu Anda.

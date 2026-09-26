@@ -53,7 +53,7 @@ export default function PaymentSolutions() {
               <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Moduler
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-              Payment Support <span className="text-red-600">Nusandana</span>
+              Payment Support <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600 font-medium">
               Dukung seluruh kebutuhan transaksi bisnis Anda dengan QRIS, Virtual Account, E-Wallet, dan Disbursement instan.

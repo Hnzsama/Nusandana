@@ -18,8 +18,8 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-3 group cursor-pointer">
               <div className="flex flex-col">
-                <span className="text-2xl font-black text-white tracking-wider">
-                  NUSAN<span className="text-red-500">DANA</span>
+                <span className="text-2xl sm:text-3xl font-black tracking-wider logo-indonesia select-none">
+                  NUSANDANA
                 </span>
               </div>
             </Link>

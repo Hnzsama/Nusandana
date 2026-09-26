@@ -131,3 +131,12 @@
     @apply font-sans;
   }
 }
+
+.logo-indonesia {
+  background: linear-gradient(180deg, #e11d48 0%, #dc2626 48%, #ffffff 52%, #f8fafc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0px 0px 1.2px #000000) drop-shadow(0.5px 0.5px 0px #000000) drop-shadow(-0.5px -0.5px 0px #000000) drop-shadow(0.5px -0.5px 0px #000000) drop-shadow(-0.5px 0.5px 0px #000000);
+}

@@ -33,7 +33,7 @@ export default function HeroSection() {
 
             <AnimateOnScroll animation="fade-up" delay={100}>
               <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                Kelola transaksi bisnis anda dengan solusi pembayaran digital dengan Nusandana — solusi pembayaran dari <strong className="text-gray-900 font-semibold">PT Gerbang Pembayaran Digital</strong>. Terima pembayaran, pantau transaksi, dan nikmati proses settlement yang praktis dalam satu ekosistem yang dirancang untuk membantu bisnis Anda berkembang.
+                Kelola pembayaran bisnis Anda lebih mudah bersama Nusandana, solusi pembayaran digital dari <strong className="text-gray-900 font-semibold">PT Gerbang Pembayaran Digital</strong>. Terima pembayaran dengan praktis, pantau transaksi secara real-time, dan nikmati proses settlement yang efisien dalam satu ekosistem pembayaran yang dirancang untuk mendukung pertumbuhan bisnis Anda.
               </p>
             </AnimateOnScroll>
 

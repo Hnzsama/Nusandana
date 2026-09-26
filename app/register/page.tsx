@@ -9,8 +9,8 @@ export default function RegisterPage() {
       <div className="flex flex-col gap-4 p-6 md:p-10 justify-between">
         <div className="flex justify-center md:justify-start">
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-            <span className="text-2xl font-black tracking-tight text-gray-900">
-              Nusan<span className="text-red-600">dana</span>
+            <span className="text-2xl sm:text-3xl font-black tracking-wider logo-indonesia select-none">
+              NUSANDANA
             </span>
           </Link>
         </div>

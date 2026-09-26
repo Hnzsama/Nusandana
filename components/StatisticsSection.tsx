@@ -180,7 +180,7 @@ export default function StatisticsSection() {
               <Sparkles className="w-3.5 h-3.5" /> Skalabilitas & Performa
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
-              Ekosistem <span className="bg-gradient-to-r from-red-600 to-rose-600 bg-clip-text text-transparent">Nusandana</span>
+              Ekosistem <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h2>
             <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
               Solusi pembayaran digital dan infrastruktur transaksi terintegrasi yang dirancang untuk mempercepat pertumbuhan bisnis Anda.
