@@ -31,7 +31,7 @@ const supportProducts = [
     title: "Website QRIS Nusandana",
     icon: <Monitor className="w-6 h-6 text-red-600" />,
     badgeColor: "bg-blue-50 text-blue-600 border-blue-200",
-    image: "/hero/WhatsApp Image 2026-09-23 at 10.16.39 PM.jpeg",
+    image: "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.05 PM.jpeg",
     imageAlt: "Website Dashboard QRIS Nusandana",
     paragraphs: [
       "Website QRIS Nusandana memudahkan UMKM dan perusahaan dalam memantau transaksi secara real-time serta mengelola laporan pembayaran dalam satu dashboard. Pengguna dapat melihat detail transaksi, riwayat pembayaran, status settlement, hingga mengakses laporan transaksi dengan lebih cepat dan praktis.",
