@@ -81,15 +81,35 @@ export default function MitraPage() {
 
               <div className="lg:col-span-5">
                 <AnimateOnScroll animation="scale-up">
-                  <div className="relative w-full h-[340px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
-                    <Image
-                      src="/mitra/Gemini_Generated_Image_6csjfv6csjfv6csj.jfif"
-                      alt="Mitra Kemitraan Strategis Nusandana"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
-                      priority
-                    />
+                  <div className="bg-white p-4 sm:p-6 rounded-3xl border border-gray-200 shadow-2xl space-y-4">
+                    <p className="text-xs font-bold text-gray-500 uppercase tracking-wider text-center border-b border-gray-100 pb-3">
+                      Mitra & Merchant Terhubung
+                    </p>
+                    <div className="grid grid-cols-2 gap-3">
+                      {[
+                        { name: "Inter Supermarket", src: "/mitra/WhatsApp Image 2026-09-21 at 6.00.03 PM.jpeg" },
+                        { name: "Level Supermarket", src: "/mitra/WhatsApp Image 2026-09-21 at 6.01.42 PM.jpeg" },
+                        { name: "Mie Ayam Bakso Arema 89", src: "/mitra/Gemini_Generated_Image_6csjfv6csjfv6csj.jfif" },
+                        { name: "Guard Store", src: "/mitra/Gemini_Generated_Image_9sn9cd9sn9cd9sn9.jfif" },
+                      ].map((item, idx) => (
+                        <div key={idx} className="relative h-28 sm:h-32 rounded-2xl overflow-hidden border border-gray-100 bg-slate-50 p-2 shadow-xs flex items-center justify-center group">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={item.src}
+                            alt={item.name}
+                            className="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="relative h-28 sm:h-32 rounded-2xl overflow-hidden border border-gray-100 bg-slate-50 p-2 shadow-xs flex items-center justify-center group">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/mitra/Gemini_Generated_Image_ru0oa4ru0oa4ru0o (1).jfif"
+                        alt="CRN 86"
+                        className="max-h-full max-w-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
                 </AnimateOnScroll>
               </div>
