@@ -13,7 +13,7 @@ const supportProducts = [
     title: "Aplikasi QRIS Nusandana",
     icon: <Smartphone className="w-6 h-6 text-red-600" />,
     badgeColor: "bg-red-50 text-red-600 border-red-200",
-    image: "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.03 PM (1).jpeg",
+    image: "/support-product/aplikasi/image.png",
     imageAlt: "Aplikasi QRIS Nusandana Mobile",
     paragraphs: [
       "Aplikasi QRIS Nusandana memudahkan UMKM dalam memantau dan mengecek transaksi secara real-time melalui smartphone. Merchant dapat melihat transaksi masuk, riwayat pembayaran, dan status transaksi dengan cepat tanpa harus melakukan pengecekan secara manual.",
@@ -31,7 +31,7 @@ const supportProducts = [
     title: "Website QRIS Nusandana",
     icon: <Monitor className="w-6 h-6 text-red-600" />,
     badgeColor: "bg-blue-50 text-blue-600 border-blue-200",
-    image: "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.05 PM.jpeg",
+    image: "/support-product/web/image.png",
     imageAlt: "Website Dashboard QRIS Nusandana",
     paragraphs: [
       "Website QRIS Nusandana memudahkan UMKM dan perusahaan dalam memantau transaksi secara real-time serta mengelola laporan pembayaran dalam satu dashboard. Pengguna dapat melihat detail transaksi, riwayat pembayaran, status settlement, hingga mengakses laporan transaksi dengan lebih cepat dan praktis.",
@@ -49,7 +49,7 @@ const supportProducts = [
     title: "QRIS Soundbox Nusandana",
     icon: <Volume2 className="w-6 h-6 text-red-600" />,
     badgeColor: "bg-amber-50 text-amber-600 border-amber-200",
-    image: "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.04 PM (2).jpeg",
+    image: "/support-product/soundbox/image.png",
     imageAlt: "QRIS Soundbox Nusandana",
     paragraphs: [
       "QRIS Soundbox Nusandana membantu merchant menerima pembayaran QRIS dengan lebih praktis, cepat, dan aman. Setiap pembayaran yang berhasil akan langsung memberikan notifikasi suara, sehingga merchant dapat mengetahui transaksi masuk tanpa harus terus mengecek aplikasi atau meminta bukti pembayaran dari pelanggan.",

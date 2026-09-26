@@ -15,41 +15,32 @@ const licenseItems = [
   {
     icon: <Award className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-red-50 border-red-100",
-    badge: "Otoritas Bank Indonesia",
-    title: "Lisensi PJP Bank Indonesia",
-    desc: "Terdaftar dan diawasi secara resmi oleh Bank Indonesia sebagai Penyelenggara Jasa Pembayaran (PJP) Kategori Izin 1.",
-    points: [
-      "Kategori Izin 1 PJP Bank Indonesia",
-      "Perhitungan & settlement dana transparan",
-      "Audit kepatuhan regulasi berkala",
-    ],
+    badge: "Otoritas Resmi",
+    title: "Lisensi Bank Indonesia",
+    numberLabel: "Nomor Lisensi BI:",
+    numberValue: "No. 24/632/DKSP/Srt/B",
+    desc: "Izin resmi dari Bank Indonesia sebagai Penyelenggara Jasa Pembayaran (PJP) yang terpercaya dan terdaftar.",
     linkText: "Verifikasi Lisensi BI",
   },
   {
     icon: <Lock className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-indigo-50 border-indigo-100",
-    badge: "Keamanan Finansial",
-    title: "PCI-DSS Level 1 Compliance",
-    desc: "Sertifikasi standar enkripsi data transaksi kartu kredit internasional tingkat tertinggi untuk menjamin perlindungan data pengguna.",
-    points: [
-      "Sertifikasi PCI-DSS Level 1 Internasional",
-      "Tokenisasi & 3D Secure v2.0",
-      "Pengujian Penetration Testing rutin",
-    ],
-    linkText: "Lihat Sertifikat PCI-DSS",
+    badge: "Regulasi Kepatuhan",
+    title: "Kepatuhan APPU PPT",
+    numberLabel: "Nomor APPU PPT:",
+    numberValue: "No. 01/APPU-PPT/NUSD/2024",
+    desc: "Penerapan Program Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme sesuai regulasi yang berlaku.",
+    linkText: "Dokumen Kepatuhan",
   },
   {
     icon: <FileCheck className="w-6 h-6 text-emerald-600 group-hover:scale-110 transition-transform" />,
     iconBg: "bg-emerald-50 border-emerald-100",
-    badge: "Manajemen Data Global",
-    title: "Sertifikasi ISO 27001",
-    desc: "Standar manajemen keamanan informasi (ISMS) global yang terverifikasi secara akurat untuk melindungi seluruh aset data bisnis.",
-    points: [
-      "Sertifikasi Standar ISO 27001:2022",
-      "Sistem mitigasi risiko & enkripsi 256-bit",
-      "Perlindungan privasi data pengguna",
-    ],
-    linkText: "Pelajari Standar ISO",
+    badge: "Keanggotaan Asosiasi",
+    title: "Anggota ASPI",
+    numberLabel: "Nomor Anggota ASPI:",
+    numberValue: "No. 189/ASPI/NUSD/2024",
+    desc: "Anggota resmi Asosiasi Sistem Pembayaran Indonesia dalam pengembangan ekosistem pembayaran nasional.",
+    linkText: "Lihat Sertifikat ASPI",
   },
 ];
 
@@ -113,23 +104,23 @@ export default function LisensiPage() {
                         </span>
                       </div>
 
-                      <h3 className="text-xl font-extrabold text-gray-900 mb-3 group-hover:text-red-600 transition-colors relative z-10">
+                      <h3 className="text-xl font-extrabold text-gray-900 mb-2 group-hover:text-red-600 transition-colors relative z-10">
                         {item.title}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6 relative z-10">
+                      {/* Display License Number Box */}
+                      <div className="mb-4 p-3 rounded-xl bg-red-50/70 border border-red-100 relative z-10">
+                        <span className="block text-[11px] font-medium text-gray-500 uppercase tracking-wide">
+                          {item.numberLabel}
+                        </span>
+                        <span className="block text-sm font-bold text-red-600 tracking-tight mt-0.5">
+                          {item.numberValue}
+                        </span>
+                      </div>
+
+                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6 relative z-10 font-medium">
                         {item.desc}
                       </p>
-
-                      {/* Points Checklist */}
-                      <div className="space-y-2.5 mb-8 relative z-10 pt-4 border-t border-gray-100">
-                        {item.points.map((point, i) => (
-                          <div key={i} className="flex items-center gap-2.5 text-xs font-semibold text-gray-700">
-                            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                            <span>{point}</span>
-                          </div>
-                        ))}
-                      </div>
                     </div>
 
                     {/* Bottom Action Button */}

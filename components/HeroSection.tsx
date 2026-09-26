@@ -91,7 +91,7 @@ export default function HeroSection() {
 
                   <div className="relative w-full h-[320px] rounded-xl overflow-hidden shadow-inner">
                     <Image
-                      src="/hero/WhatsApp Image 2026-09-23 at 10.16.39 PM.jpeg"
+                      src="/hero/Gemini_Generated_Image_jtkywjjtkywjjtky.jfif.jpeg"
                       alt="Solusi Pembayaran Digital Dashboard Preview"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
