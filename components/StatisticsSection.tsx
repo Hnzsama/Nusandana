@@ -55,6 +55,7 @@ function CardImageCarousel({ images, title }: { images: string[]; title: string 
             src={images[currentIndex]}
             alt={`${title} slide ${currentIndex + 1}`}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain hover:scale-105 transition-transform duration-300"
           />
         </div>
@@ -124,6 +125,7 @@ function CardImageCarousel({ images, title }: { images: string[]; title: string 
               src={images[currentIndex]}
               alt={`${title} zoomed slide ${currentIndex + 1}`}
               fill
+              sizes="100vw"
               className="object-contain"
             />
           </div>

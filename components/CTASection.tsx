@@ -63,6 +63,7 @@ export default function CTASection() {
                 src="/hero/WhatsApp Image 2026-09-23 at 10.16.39 PM.jpeg"
                 alt="Solusi Pembayaran Digital Nusandana"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
