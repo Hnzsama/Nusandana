@@ -6,20 +6,20 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { TrendingUp, Users, ShieldCheck, Clock, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 
 const dashboardImages = [
-  "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.05 PM.jpeg",
-  "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.18 PM.jpeg",
-  "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.30 PM.jpeg",
-  "/ekosistem/dashboard/WhatsApp Image 2026-09-23 at 10.08.42 PM.jpeg",
+  "/ekosistem/dashboard/dashboard-preview-1.jpeg",
+  "/ekosistem/dashboard/dashboard-preview-2.jpeg",
+  "/ekosistem/dashboard/dashboard-preview-3.jpeg",
+  "/ekosistem/dashboard/dashboard-preview-4.jpeg",
 ];
 
 const aplikasiImages = [
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.03 PM.jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.03 PM (1).jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.03 PM (2).jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.03 PM (3).jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.04 PM.jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.04 PM (1).jpeg",
-  "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.04 PM (2).jpeg",
+  "/ekosistem/aplikasi/app-screen-1.jpeg",
+  "/ekosistem/aplikasi/app-screen-2.jpeg",
+  "/ekosistem/aplikasi/app-screen-3.jpeg",
+  "/ekosistem/aplikasi/app-screen-4.jpeg",
+  "/ekosistem/aplikasi/app-screen-5.jpeg",
+  "/ekosistem/aplikasi/app-screen-6.jpeg",
+  "/ekosistem/aplikasi/app-screen-7.jpeg",
 ];
 
 const multiRoleImages = [
