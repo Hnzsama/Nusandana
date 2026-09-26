@@ -22,6 +22,14 @@ const aplikasiImages = [
   "/ekosistem/aplikasi/WhatsApp Image 2026-09-23 at 10.05.04 PM (2).jpeg",
 ];
 
+const multiRoleImages = [
+  "/ekosistem/multi-role/image.png",
+];
+
+const settlementImages = [
+  "/ekosistem/settlement/image.png",
+];
+
 function CardImageCarousel({ images, title }: { images: string[]; title: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
@@ -156,7 +164,7 @@ const stats = [
     value: "Multi-Role",
     label: "Multiple Log in Akun Bos dan Kasir",
     description: "Hak akses login terpisah untuk pemilik bisnis (bos), supervisor, hingga akun kasir dengan kontrol penuh.",
-    images: null,
+    images: multiRoleImages,
   },
   {
     icon: <ShieldCheck className="w-6 h-6 text-red-600 group-hover:scale-110 transition-transform" />,
@@ -164,7 +172,7 @@ const stats = [
     value: "Settlement H+0",
     label: "Settlement H+0 dan Customer Care",
     description: "Pencairan dana langsung di hari yang sama (H+0) serta pendampingan tim Customer Care Nusandana.",
-    images: null,
+    images: settlementImages,
   },
 ];
 
