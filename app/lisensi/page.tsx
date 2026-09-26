@@ -69,8 +69,8 @@ export default function LisensiPage() {
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-gray-900 leading-tight">
                 Lisensi Bank Indonesia & <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">Sertifikasi Keamanan</span>
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Keamanan transaksi dan kepatuhan hukum adalah komitmen utama infrastruktur kami.
+              <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
+                Jaminan keamanan transaksi dan kepatuhan hukum penuh adalah komitmen utama infrastruktur gerbang pembayaran digital Nusandana.
               </p>
             </AnimateOnScroll>
           </div>
@@ -88,8 +88,8 @@ export default function LisensiPage() {
                 <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
                   Sertifikasi & Kepatuhan <span className="text-red-600">Internasional</span>
                 </h2>
-                <p className="mt-3 text-sm sm:text-base text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Perlindungan data keuangan dengan infrastruktur teruji.
+                <p className="mt-3 text-sm sm:text-base text-gray-600 font-medium">
+                  Perhitungan enkripsi berlapis, lisensi resmi Bank Indonesia, serta audit sertifikasi keamanan teruji untuk melindungi data transaksi Anda.
                 </p>
               </div>
             </AnimateOnScroll>

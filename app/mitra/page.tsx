@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
@@ -61,18 +62,39 @@ export default function MitraPage() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="pt-24 pb-16 sm:pt-28 sm:pb-24 bg-gradient-to-b from-red-50/70 via-white to-slate-50/50">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <AnimateOnScroll animation="fade-up">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
-                <Handshake className="w-4 h-4 text-red-600" /> Program Kemitraan Strategis
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              
+              <div className="lg:col-span-7 text-center lg:text-left">
+                <AnimateOnScroll animation="fade-up">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
+                    <Handshake className="w-4 h-4 text-red-600" /> Program Kemitraan Strategis
+                  </div>
+                  <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+                    Tumbuh Bersama Ekosistem <span className="logo-indonesia inline-block">NUSANDANA</span>
+                  </h1>
+                  <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
+                    Bergabunglah dengan ribuan mitra perbankan, platform e-commerce, pengembang POS/ERP, dan reseller aktif yang telah memperluas jaringan bisnis bersama solusi sistem pembayaran terintegrasi Nusandana.
+                  </p>
+                </AnimateOnScroll>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-gray-900 leading-tight">
-                Tumbuh Bersama Ekosistem <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">Nusandana</span>
-              </h1>
-              <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bergabunglah dengan ribuan mitra perbankan, platform e-commerce, dan pengembang sistem.
-              </p>
-            </AnimateOnScroll>
+
+              <div className="lg:col-span-5">
+                <AnimateOnScroll animation="scale-up">
+                  <div className="relative w-full h-[340px] sm:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+                    <Image
+                      src="/mitra/Gemini_Generated_Image_6csjfv6csjfv6csj.jfif"
+                      alt="Mitra Kemitraan Strategis Nusandana"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </AnimateOnScroll>
+              </div>
+
+            </div>
           </div>
         </section>
 
@@ -88,8 +110,8 @@ export default function MitraPage() {
                 <h2 className="text-3xl sm:text-4xl font-black text-gray-900 tracking-tight">
                   Pilih Skema Kerja Sama <span className="text-red-600">Terbaik Anda</span>
                 </h2>
-                <p className="mt-3 text-sm sm:text-base text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Solusi kemitraan fleksibel dengan dukungan teknis dan komersial penuh.
+                <p className="mt-3 text-sm sm:text-base text-gray-600 font-medium">
+                  Solusi kemitraan fleksibel yang didukung infrastruktur teknologi teruji, jaminan insentif komersial, dan pendampingan dedicated.
                 </p>
               </div>
             </AnimateOnScroll>

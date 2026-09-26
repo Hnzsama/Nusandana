@@ -7,23 +7,23 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     id: "faq-1",
-    question: "Berapa lama proses integrasi payment gateway PaymentApp?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integrasi API dapat diselesaikan dalam waktu kurang dari 1 hari menggunakan SDK kami.",
+    question: "Berapa lama proses integrasi payment gateway Nusandana?",
+    answer: "Integrasi API dapat diselesaikan dalam waktu cepat (kurang dari 1 hari) menggunakan SDK dan dokumentasi developer terstruktur kami.",
   },
   {
     id: "faq-2",
-    question: "Kanal pembayaran apa saja yang didukung?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kami mendukung Virtual Account (BCA, Mandiri, BNI, BRI, Permata), QRIS, E-Wallet, Kartu Kredit, dan Retail Outlet.",
+    question: "Metode pembayaran apa saja yang didukung?",
+    answer: "Nusandana mendukung metode penerimaan pembayaran QRIS Instant, E-Wallet Direct (GoPay, OVO, ShopeePay, DANA, LinkAja), dan Virtual Account Multi-Bank (BCA, Mandiri, BNI, BRI, Permata).",
   },
   {
     id: "faq-3",
     question: "Apakah sistem aman dan memiliki lisensi resmi?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. PaymentApp terlisensi resmi oleh Bank Indonesia dan tersertifikasi PCI-DSS Level 1.",
+    answer: "Sistem Nusandana terlisensi dan diawasi oleh Bank Indonesia serta tersertifikasi keamanan PCI-DSS Level 1.",
   },
   {
     id: "faq-4",
     question: "Bagaimana dengan kecepatan settlement dana transaksi?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kami mendukung settlement instan Real-Time serta opsi settlement H+0 / H+1.",
+    answer: "Nusandana mendukung fitur Settlement H+0 (pencairan di hari yang sama) serta pencairan dana otomatis berkecepatan tinggi.",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function FAQSection() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
               Pertanyaan yang Sering Diajukan <span className="text-red-600">(FAQ)</span>
             </h2>
-            <p className="mt-3 text-base text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temukan jawaban seputar layanan kami.
+            <p className="mt-3 text-base text-gray-600 font-medium">
+              Temukan jawaban atas pertanyaan umum seputar integrasi, keamanan, dan fitur pembayaran Nusandana.
             </p>
           </div>
         </AnimateOnScroll>

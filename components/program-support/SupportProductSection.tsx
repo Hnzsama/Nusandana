@@ -75,7 +75,7 @@ export default function SupportProductSection() {
               Dukungan Produk Terpadu
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight">
-              Support <span className="logo-indonesia inline-block">PRODUCT</span> Nusandana
+              Support Product <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg text-gray-600 font-medium leading-relaxed">
               Ekosistem lengkap perangkat dan platform penerimaan pembayaran QRIS yang dirancang khusus untuk mempermudah operasional bisnis Anda.
@@ -95,17 +95,32 @@ export default function SupportProductSection() {
               >
                 <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${isEven ? 'lg:flex-row-reverse' : ''}`}>
                   
-                  {/* Image Column */}
+                  {/* Image Column with Floating Animation */}
                   <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                     <AnimateOnScroll animation="scale-up">
-                      <div className="relative w-full h-[320px] sm:h-[400px] rounded-2xl overflow-hidden bg-slate-100 border border-gray-200 shadow-inner group">
-                        <Image
-                          src={item.image}
-                          alt={item.imageAlt}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-                        />
+                      <div className="relative w-full py-4 flex items-center justify-center">
+                        
+                        {/* Soft Glow Background */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-gradient-to-tr from-red-400/20 via-rose-300/10 to-amber-200/20 rounded-full blur-2xl pointer-events-none" />
+
+                        {/* Floating Card Container */}
+                        <div className="relative w-full h-[320px] sm:h-[420px] rounded-3xl overflow-hidden bg-white/80 backdrop-blur-md border border-gray-200/90 shadow-2xl hover:shadow-red-500/15 transition-all duration-500 hover:-translate-y-2 group">
+                          
+                          {/* Floating Badge */}
+                          <div className="absolute top-4 left-4 z-20 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-gray-100 shadow-md flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                            <span className="text-xs font-bold text-gray-800">{item.category}</span>
+                          </div>
+
+                          <Image
+                            src={item.image}
+                            alt={item.imageAlt}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-contain p-4 group-hover:scale-108 transition-transform duration-500 ease-out"
+                          />
+                        </div>
+
                       </div>
                     </AnimateOnScroll>
                   </div>
