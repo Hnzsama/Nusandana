@@ -1,33 +1,32 @@
 import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import UMKMArticleSection from "@/components/program-support/UMKMArticleSection";
-import UMKMPaymentLinksSection from "@/components/program-support/UMKMPaymentLinksSection";
+import SupportProductSection from "@/components/program-support/SupportProductSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Program Support UMKM | Nusandana",
-  description: "Solusi penerimaan pembayaran dan payment link terlengkap untuk mendukung pertumbuhan bisnis UMKM Indonesia.",
+  title: "Support Product | Nusandana",
+  description: "Dukungan produk terlengkap mencakup Aplikasi QRIS Mobile, Web Dashboard, dan QRIS Soundbox Nusandana.",
   openGraph: {
-    title: "Program Support UMKM | Nusandana",
-    description: "Solusi penerimaan pembayaran dan payment link terlengkap untuk mendukung pertumbuhan bisnis UMKM Indonesia.",
+    title: "Support Product | Nusandana",
+    description: "Dukungan produk terlengkap mencakup Aplikasi QRIS Mobile, Web Dashboard, dan QRIS Soundbox Nusandana.",
     type: "website",
     url: "https://nusandana.example.com/program-support",
   },
 };
 
-export default function ProgramSupportHubPage() {
+export default function SupportProductHubPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Program Support UMKM Nusandana",
+    name: "Support Product Nusandana",
     provider: {
       "@type": "FinancialService",
       name: "Nusandana",
     },
-    serviceType: "Solusi Penerimaan Pembayaran UMKM",
-    description: "Program bantuan dan solusi transaksi digital untuk Usaha Mikro, Kecil, dan Menengah.",
+    serviceType: "Solusi Penerimaan Pembayaran Produk QRIS",
+    description: "Dukungan Produk Aplikasi, Website Dashboard, dan QRIS Soundbox Nusandana.",
     areaServed: "Indonesia",
   };
 
@@ -40,17 +39,7 @@ export default function ProgramSupportHubPage() {
       <Navbar />
 
       <main className="flex-grow">
-        {/* Section 2 Module 2: Solusi Payment Links UMKM */}
-        <section id="payment-links">
-          <UMKMPaymentLinksSection />
-        </section>
-
-        {/* Section 2 Module 1: Artikel & Panduan Pembayaran UMKM */}
-        <section id="artikel">
-          <UMKMArticleSection />
-        </section>
-
-        {/* FAQ & CTA */}
+        <SupportProductSection />
         <FAQSection />
         <CTASection />
       </main>

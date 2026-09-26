@@ -168,12 +168,12 @@ export default function Footer() {
 
           {/* Solusi */}
           <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Solusi Program</h4>
+            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Support Product</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer font-semibold text-red-400">Program Support UMKM</Link></li>
-              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Settlement H+0 Instan</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Integrasi POS & Toko Online</Link></li>
+              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer font-semibold text-red-400">Support Product Hub</Link></li>
+              <li><Link href="/program-support#aplikasi" className="hover:text-red-400 transition-colors cursor-pointer">Aplikasi QRIS Nusandana</Link></li>
+              <li><Link href="/program-support#website" className="hover:text-red-400 transition-colors cursor-pointer">Website QRIS Nusandana</Link></li>
+              <li><Link href="/program-support#soundbox" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Soundbox Nusandana</Link></li>
             </ul>
           </div>
 

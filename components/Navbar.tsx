@@ -23,13 +23,14 @@ export default function Navbar() {
       ],
     },
     {
-      label: "Support UMKM",
+      label: "Support Product",
       href: "/program-support",
       hasDropdown: true,
       items: [
-        { name: "Program Support Hub", href: "/program-support" },
-        { name: "Solusi Payment Links UMKM", href: "/program-support/payment-links" },
-        { name: "Artikel & Panduan UMKM", href: "/program-support/artikel" },
+        { name: "Semua Support Product", href: "/program-support" },
+        { name: "Aplikasi QRIS Nusandana", href: "/program-support#aplikasi" },
+        { name: "Website QRIS Nusandana", href: "/program-support#website" },
+        { name: "QRIS Soundbox Nusandana", href: "/program-support#soundbox" },
       ],
     },
     {
