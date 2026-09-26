@@ -158,11 +158,11 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-bold text-white uppercase tracking-wider text-xs">Produk</h4>
             <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Kanal Pembayaran</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
+              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Metode Pembayaran</Link></li>
+              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Instant</Link></li>
+              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">E-Wallet Direct</Link></li>
               <li><Link href="/payments?cat=va" className="hover:text-red-400 transition-colors cursor-pointer">Virtual Account Multi-Bank</Link></li>
-              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Instant & E-Wallet</Link></li>
-              <li><Link href="/payments?cat=all" className="hover:text-red-400 transition-colors cursor-pointer">Disbursement & Payouts</Link></li>
+              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
             </ul>
           </div>
 

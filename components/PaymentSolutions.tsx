@@ -15,14 +15,6 @@ const solutions = [
     link: "/payments?cat=qris-wallet",
   },
   {
-    id: "va",
-    title: "Virtual Account Multi-Bank",
-    icon: <Building2 className="w-6 h-6 text-red-600" />,
-    description: "Rekening Virtual Account otomatis untuk BCA, Mandiri, BNI, BRI, Permata, Danamon & CIMB.",
-    features: ["Konfirmasi transaksi otomatis", "Fitur refund & penyesuaian", "Masa berlaku (expired) fleksibel"],
-    link: "/payments?cat=va",
-  },
-  {
     id: "ewallet",
     title: "E-Wallet Direct Checkout",
     icon: <Wallet className="w-6 h-6 text-red-600" />,
@@ -31,12 +23,12 @@ const solutions = [
     link: "/payments?cat=qris-wallet",
   },
   {
-    id: "disbursement",
-    title: "Disbursement & Transfer Dana",
-    icon: <CreditCard className="w-6 h-6 text-red-600" />,
-    description: "Transfer dana instan ke ribuan rekening bank & e-wallet secara bersamaan dalam hitungan detik.",
-    features: ["Batch payout otomatis", "Validasi nomor rekening instan", "Laporan riwayat pencairan transparan"],
-    link: "/payments?cat=all",
+    id: "va",
+    title: "Virtual Account Multi-Bank",
+    icon: <Building2 className="w-6 h-6 text-red-600" />,
+    description: "Rekening Virtual Account otomatis untuk BCA, Mandiri, BNI, BRI, Permata, Danamon & CIMB.",
+    features: ["Konfirmasi transaksi otomatis", "Fitur refund & penyesuaian", "Masa berlaku (expired) fleksibel"],
+    link: "/payments?cat=va",
   },
 ];
 
@@ -50,18 +42,18 @@ export default function PaymentSolutions() {
         <AnimateOnScroll animation="fade-up">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-semibold uppercase tracking-wider mb-4">
-              <Sparkles className="w-3.5 h-3.5 text-red-600" /> Solusi Pembayaran Moduler
+              <Sparkles className="w-3.5 h-3.5 text-red-600" /> Metode Pembayaran Unggulan
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-              Payment Support <span className="logo-indonesia inline-block">NUSANDANA</span>
+              Metode Pembayaran <span className="logo-indonesia inline-block">NUSANDANA</span>
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600 font-medium">
-              Dukung seluruh kebutuhan transaksi bisnis Anda dengan QRIS, Virtual Account, E-Wallet, dan Disbursement instan.
+              Dukung kebutuhan transaksi bisnis Anda dengan pilihan metode pembayaran QRIS, E-Wallet, dan Virtual Account multi-bank.
             </p>
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {solutions.map((item, idx) => (
             <AnimateOnScroll key={item.id} animation="fade-up" delay={idx * 100}>
               <div

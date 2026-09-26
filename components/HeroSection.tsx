@@ -79,28 +79,6 @@ export default function HeroSection() {
             <AnimateOnScroll animation="scale-up" delay={150}>
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 
-                {/* Floating Card Decorative 1 */}
-                <div className="absolute -top-6 -left-6 z-20 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
-                    <Zap className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 font-medium">Settlement Speed</p>
-                    <p className="text-sm font-bold text-gray-900">Real-Time (Instan)</p>
-                  </div>
-                </div>
-
-                {/* Floating Card Decorative 2 */}
-                <div className="absolute -bottom-6 -right-6 z-20 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-600 font-bold">
-                    <Lock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 font-medium">Security Encryption</p>
-                    <p className="text-sm font-bold text-gray-900">256-Bit SSL Secured</p>
-                  </div>
-                </div>
-
                 {/* Main Dashboard Preview Box */}
                 <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-2xl border border-gray-200/80 hover:shadow-red-500/10 transition-shadow">
                   <div className="flex items-center justify-between border-b border-gray-100 pb-4 mb-4">
@@ -109,7 +87,6 @@ export default function HeroSection() {
                       <div className="w-3 h-3 rounded-full bg-yellow-400" />
                       <div className="w-3 h-3 rounded-full bg-green-400" />
                     </div>
-                    <span className="text-xs font-mono text-gray-400">dashboard.paymentapp.co</span>
                   </div>
 
                   <div className="relative w-full h-[320px] rounded-xl overflow-hidden shadow-inner">

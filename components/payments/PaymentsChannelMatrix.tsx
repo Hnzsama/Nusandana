@@ -33,22 +33,10 @@ interface PaymentChannel {
 
 const channelsData: PaymentChannel[] = [
   {
-    id: "va-bank",
-    category: "va",
-    name: "Virtual Account (BCA, BNI, BRI, Mandiri, Permata)",
-    categoryLabel: "Virtual Account",
-    description: "Nomor rekening virtual otomatis untuk BCA, BNI, BRI, Mandiri, Permata, dan CIMB Niaga dengan verifikasi otomatis 24/7.",
-    brands: ["BCA", "BNI", "BRI", "Mandiri", "Permata", "CIMB"],
-    settlementSpeed: "Real-Time (Instan)",
-    transactionLimit: "Hingga Rp 500 Juta / tx",
-    status: "Ready API",
-    features: ["Auto-Reconcile", "Expired Time Custom", "Single & Multi Use"],
-  },
-  {
     id: "qris-instant",
     category: "qris-wallet",
     name: "QRIS (QR Code Standar Indonesia)",
-    categoryLabel: "E-Wallet & QRIS",
+    categoryLabel: "QRIS",
     description: "Terima pembayaran QRIS nasional dari seluruh m-banking (BCA Mobile, Livin, BRImo) dan aplikasi e-wallet terdaftar.",
     brands: ["QRIS", "GPN", "BCA Mobile", "Livin", "BRImo"],
     settlementSpeed: "H+0 / Real-Time",
@@ -60,7 +48,7 @@ const channelsData: PaymentChannel[] = [
     id: "ewallet-popular",
     category: "qris-wallet",
     name: "E-Wallet (OVO, GoPay, ShopeePay, DANA, LinkAja)",
-    categoryLabel: "E-Wallet & QRIS",
+    categoryLabel: "E-Wallet",
     description: "Checkout cepat satu klik dengan auto-redirect ke aplikasi GoPay, OVO, ShopeePay, DANA, dan LinkAja.",
     brands: ["GoPay", "OVO", "ShopeePay", "DANA", "LinkAja"],
     settlementSpeed: "Real-Time (Instan)",
@@ -69,40 +57,16 @@ const channelsData: PaymentChannel[] = [
     features: ["One-Click Checkout", "Auto Redirect", "Tokenization"],
   },
   {
-    id: "credit-card",
-    category: "card",
-    name: "Kartu Kredit (Visa, Mastercard, JCB, Amex)",
-    categoryLabel: "Kartu Kredit",
-    description: "Pemrosesan transaksi kartu Visa, Mastercard, JCB, dan Amex global dengan fitur enkripsi 3D Secure v2.",
-    brands: ["Visa", "Mastercard", "JCB", "American Express"],
-    settlementSpeed: "H+2 s/d H+5",
-    transactionLimit: "Sesuai Limit Kartu",
+    id: "va-bank",
+    category: "va",
+    name: "Virtual Account Multi-Bank (BCA, BNI, BRI, Mandiri, Permata)",
+    categoryLabel: "Virtual Account",
+    description: "Nomor rekening virtual otomatis untuk BCA, BNI, BRI, Mandiri, Permata, dan CIMB Niaga dengan verifikasi otomatis 24/7.",
+    brands: ["BCA", "BNI", "BRI", "Mandiri", "Permata", "CIMB"],
+    settlementSpeed: "Real-Time (Instan)",
+    transactionLimit: "Hingga Rp 500 Juta / tx",
     status: "Ready API",
-    features: ["3D Secure 2.0", "Fraud Detection System", "Recurring Billing"],
-  },
-  {
-    id: "paylater-bnpl",
-    category: "paylater",
-    name: "PayLater (Akulaku, Kredivo, Atome, Indodana)",
-    categoryLabel: "Retail & PayLater",
-    description: "Opsi bayar nanti dan cicilan 0% dari Akulaku, Kredivo, Atome, dan Indodana untuk meningkatkan nilai transaksi.",
-    brands: ["Kredivo", "Akulaku", "Atome", "Indodana"],
-    settlementSpeed: "H+1 Bisnis",
-    transactionLimit: "Hingga Rp 30 Juta / tx",
-    status: "Ready API",
-    features: ["0% Installment Option", "Instant Credit Approval", "Full Guarantee"],
-  },
-  {
-    id: "retail-outlet",
-    category: "paylater",
-    name: "Gerai Retail (Indomaret & Alfamart Group)",
-    categoryLabel: "Retail & PayLater",
-    description: "Layanan pembayaran tunai di 30.000+ jaringan gerai minimarket Indomaret dan Alfamart Group seluruh Indonesia.",
-    brands: ["Indomaret", "Alfamart", "Alfamidi", "Lawson"],
-    settlementSpeed: "H+1 Bisnis",
-    transactionLimit: "Hingga Rp 5 Juta / tx",
-    status: "Ready API",
-    features: ["Payment Code Generator", "Over the Counter", "Nationwide Network"],
+    features: ["Auto-Reconcile", "Expired Time Custom", "Single & Multi Use"],
   },
 ];
 
@@ -134,10 +98,6 @@ function MatrixContent() {
         return <Building2 className="w-5 h-5 text-red-600 group-hover:text-white transition-colors duration-300" />;
       case "qris-wallet":
         return <QrCode className="w-5 h-5 text-red-600 group-hover:text-white transition-colors duration-300" />;
-      case "card":
-        return <CreditCard className="w-5 h-5 text-sky-600 group-hover:text-white transition-colors duration-300" />;
-      case "paylater":
-        return <ShoppingBag className="w-5 h-5 text-emerald-600 group-hover:text-white transition-colors duration-300" />;
       default:
         return <Zap className="w-5 h-5 text-red-600 group-hover:text-white transition-colors duration-300" />;
     }
@@ -151,24 +111,24 @@ function MatrixContent() {
         <AnimateOnScroll animation="fade-up">
           <div className="text-center max-w-3xl mx-auto mb-10 pt-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-red-600" /> Live Payment Channels
+              <Sparkles className="w-3.5 h-3.5 text-red-600" /> Live Payment Methods
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
-              Kanal Pembayaran & <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">Matrix Integrasi</span>
+              Metode Pembayaran & <span className="bg-gradient-to-r from-red-600 via-red-600 to-rose-400 bg-clip-text text-transparent">Matrix Integrasi</span>
             </h1>
 
             <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Satu integrasi API modern untuk mengakses seluruh Virtual Account, QRIS, E-Wallet, Kartu Kredit, dan Retail Outlet resmi di Indonesia.
+              Satu integrasi API modern untuk mengakses pembayaran QRIS, E-Wallet, dan Virtual Account resmi di Indonesia.
             </p>
 
             {/* Stat Badges */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-gray-200 text-xs font-semibold text-gray-700 shadow-xs">
-                <Layers className="w-3.5 h-3.5 text-red-600" /> 30+ Kanal Resmi
+                <Layers className="w-3.5 h-3.5 text-red-600" /> QRIS, E-Wallet & VA
               </span>
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-gray-200 text-xs font-semibold text-gray-700 shadow-xs">
-                <Zap className="w-3.5 h-3.5 text-red-600" /> Settlement Real-Time
+                <Zap className="w-3.5 h-3.5 text-red-600" /> Settlement H+0 & Real-Time
               </span>
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-gray-200 text-xs font-semibold text-gray-700 shadow-xs">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" /> Certified PCI-DSS Level 1
@@ -184,11 +144,9 @@ function MatrixContent() {
             {/* Tabs */}
             <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
               {[
-                { id: "all", label: "Semua Kanal" },
-                { id: "va", label: "Virtual Account" },
+                { id: "all", label: "Semua Metode" },
                 { id: "qris-wallet", label: "QRIS & E-Wallet" },
-                { id: "card", label: "Kartu Kredit" },
-                { id: "paylater", label: "Retail & PayLater" },
+                { id: "va", label: "Virtual Account" },
               ].map((tab) => (
                 <button
                   key={tab.id}

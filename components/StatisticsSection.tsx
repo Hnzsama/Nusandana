@@ -64,43 +64,47 @@ function CardImageCarousel({ images, title }: { images: string[]; title: string 
           Klik untuk memperbesar
         </div>
 
-        {/* Prev / Next Controls */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-red-600 hover:text-white text-gray-700 flex items-center justify-center shadow-md transition-all z-10 cursor-pointer border border-gray-200"
-          aria-label="Previous image"
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-red-600 hover:text-white text-gray-700 flex items-center justify-center shadow-md transition-all z-10 cursor-pointer border border-gray-200"
-          aria-label="Next image"
-        >
-          <ChevronRight className="w-5 h-5" />
-        </button>
-
-        {/* Counter & Indicator Badge */}
-        <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[11px] font-bold font-mono px-2.5 py-0.5 rounded-md shadow-sm">
-          {currentIndex + 1} / {images.length}
-        </div>
-
-        {/* Pagination Dots */}
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10 bg-white/90 shadow-md px-3 py-1.5 rounded-full border border-gray-200">
-          {images.map((_, idx) => (
+        {/* Prev / Next Controls (Only if multiple images) */}
+        {images.length > 1 && (
+          <>
             <button
-              key={idx}
-              onClick={(e) => {
-                e.stopPropagation();
-                setCurrentIndex(idx);
-              }}
-              className={`h-2 rounded-full transition-all cursor-pointer ${
-                idx === currentIndex ? "w-6 bg-red-600" : "w-2 bg-gray-300 hover:bg-gray-400"
-              }`}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
-        </div>
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-red-600 hover:text-white text-gray-700 flex items-center justify-center shadow-md transition-all z-10 cursor-pointer border border-gray-200"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-red-600 hover:text-white text-gray-700 flex items-center justify-center shadow-md transition-all z-10 cursor-pointer border border-gray-200"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            {/* Counter & Indicator Badge */}
+            <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[11px] font-bold font-mono px-2.5 py-0.5 rounded-md shadow-sm">
+              {currentIndex + 1} / {images.length}
+            </div>
+
+            {/* Pagination Dots */}
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10 bg-white/90 shadow-md px-3 py-1.5 rounded-full border border-gray-200">
+              {images.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentIndex(idx);
+                  }}
+                  className={`h-2 rounded-full transition-all cursor-pointer ${
+                    idx === currentIndex ? "w-6 bg-red-600" : "w-2 bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Fullscreen Zoom Modal */}

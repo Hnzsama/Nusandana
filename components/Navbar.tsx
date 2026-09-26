@@ -12,15 +12,14 @@ export default function Navbar() {
 
   const navItems = [
     {
-      label: "Kanal Pembayaran",
+      label: "Metode Pembayaran",
       href: "/payments",
       hasDropdown: true,
       items: [
-        { name: "Semua Kanal Pembayaran", href: "/payments?cat=all" },
+        { name: "Semua Metode Pembayaran", href: "/payments?cat=all" },
+        { name: "QRIS Instant", href: "/payments?cat=qris-wallet" },
+        { name: "E-Wallet Direct", href: "/payments?cat=qris-wallet" },
         { name: "Virtual Account Multi-Bank", href: "/payments?cat=va" },
-        { name: "QRIS Instant & E-Wallet", href: "/payments?cat=qris-wallet" },
-        { name: "Kartu Kredit & International", href: "/payments?cat=card" },
-        { name: "Retail & PayLater", href: "/payments?cat=paylater" },
       ],
     },
     {
