@@ -27,7 +27,6 @@ export default function Navbar() {
       label: "Support UMKM",
       href: "/program-support",
       hasDropdown: true,
-      highlight: true,
       items: [
         { name: "Program Support Hub", href: "/program-support" },
         { name: "Solusi Payment Links UMKM", href: "/program-support/payment-links" },
@@ -87,16 +86,14 @@ export default function Navbar() {
                 <Link
                   href={item.href}
                   className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-colors cursor-pointer ${
-                    item.highlight
-                      ? "bg-red-50 text-red-600 font-bold hover:bg-red-100/80"
-                      : isActive
+                    isActive
                       ? "text-red-600 font-bold bg-red-50/90 shadow-xs border border-red-100/50"
                       : "hover:text-red-600 hover:bg-red-50/50"
                   }`}
                 >
                   {item.label}
                   {item.hasDropdown && (
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.label || isActive || item.highlight ? "text-red-600" : "text-gray-400"} ${activeDropdown === item.label ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${activeDropdown === item.label || isActive ? "text-red-600" : "text-gray-400"} ${activeDropdown === item.label ? "rotate-180" : ""}`} />
                   )}
                 </Link>
 
