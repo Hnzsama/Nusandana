@@ -30,7 +30,12 @@ export default function PartnerLogos() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={mitra.src}
-                  alt={mitra.name}
+                  alt={`Mitra Merchant Nusandana - ${mitra.name}`}
+                  title={`Mitra Merchant Nusandana - ${mitra.name}`}
+                  width={180}
+                  height={70}
+                  loading="lazy"
+                  decoding="async"
                   className="max-h-14 max-w-full object-contain rounded-lg"
                 />
               </div>

@@ -92,7 +92,13 @@ export default function HeroSection() {
                   <div className="relative w-full rounded-lg overflow-hidden flex items-center justify-center bg-slate-50">
                     <img
                       src="/hero/hero-dashboard-preview.jpeg"
-                      alt="Solusi Pembayaran Digital Dashboard Preview"
+                      alt="Solusi Pembayaran Digital Dashboard Preview Nusandana"
+                      title="Solusi Pembayaran Digital Dashboard Preview Nusandana"
+                      width={300}
+                      height={420}
+                      // @ts-ignore
+                      fetchPriority="high"
+                      decoding="async"
                       className="w-full h-auto object-contain rounded-md shadow-xs"
                     />
                   </div>

@@ -103,7 +103,12 @@ export default function AsiaExpansion() {
                 <div className="relative bg-slate-900 rounded-2xl p-2.5 sm:p-3 border border-slate-800 shadow-2xl overflow-hidden">
                   <img
                     src="/program_unggulan/cair_landscape.jpeg"
-                    alt="Program Nusandana Transaksi Hari Ini, Cair Hari Ini"
+                    alt="Program Nusandana Transaksi Hari Ini, Cair Hari Ini - Instant Settlement QRIS"
+                    title="Program Nusandana Transaksi Hari Ini, Cair Hari Ini - Instant Settlement QRIS"
+                    width={640}
+                    height={360}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto rounded-xl object-contain shadow-md"
                   />
                 </div>
