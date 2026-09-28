@@ -64,10 +64,18 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Nusandana Payment Infrastructure 3.0 - Payment Gateway Indonesia",
+        type: "image/jpeg",
+      },
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nusandana Payment Infrastructure 3.0 - Payment Gateway Indonesia",
+        type: "image/png",
       },
     ],
   },
@@ -78,7 +86,7 @@ export const metadata: Metadata = {
       "Infrastruktur penerimaan pembayaran digital terdepan di Indonesia. Terima Virtual Account, QRIS, E-Wallet, dan Kartu Kredit dalam 1 API unified.",
     site: "@nusandana",
     creator: "@nusandana",
-    images: ["/og-image.svg"],
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,

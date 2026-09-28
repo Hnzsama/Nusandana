@@ -18,12 +18,14 @@ export const metadata: Metadata = {
     description:
       "Daftar akun merchant Nusandana secara gratis. Mulai terima pembayaran QRIS Instant, Virtual Account Multi-Bank, dan E-Wallet tanpa biaya pendaftaran.",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Register Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Registrasi Pendaftaran Merchant Gratis | Nusandana",
     description:
       "Daftar akun merchant Nusandana secara gratis. Mulai terima pembayaran QRIS Instant, Virtual Account Multi-Bank, dan E-Wallet tanpa biaya pendaftaran.",
+    images: ["/og-image.jpg"],
   },
 };
 

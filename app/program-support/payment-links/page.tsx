@@ -22,12 +22,14 @@ export const metadata: Metadata = {
       "Terima pembayaran digital secara mudah melalui tautan pembayaran (Payment Link) dan QR Code tanpa perlu integrasi coding yang rumit.",
     type: "website",
     url: `${appUrl}/program-support/payment-links`,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Payment Links Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Solusi Payment Links UMKM & QR Code | Nusandana",
     description:
       "Terima pembayaran digital secara mudah melalui tautan pembayaran (Payment Link) dan QR Code tanpa perlu integrasi coding yang rumit.",
+    images: ["/og-image.jpg"],
   },
 };
 

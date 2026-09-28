@@ -25,12 +25,14 @@ export const metadata: Metadata = {
       "Terima pembayaran dari seluruh Virtual Account, QRIS Instant, E-Wallet Direct, Kartu Kredit, dan Payment Links UMKM Indonesia dalam 1 API unified.",
     type: "website",
     url: `${appUrl}/payments`,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Kanal Pembayaran Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kanal Pembayaran & Matrix Integrasi | Nusandana",
     description:
       "Terima pembayaran dari seluruh Virtual Account, QRIS Instant, E-Wallet Direct, Kartu Kredit, dan Payment Links UMKM Indonesia dalam 1 API unified.",
+    images: ["/og-image.jpg"],
   },
 };
 

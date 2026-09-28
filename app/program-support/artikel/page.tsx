@@ -23,12 +23,14 @@ export const metadata: Metadata = {
       "Kumpulan artikel, tips, dan panduan lengkap tentang penerapan sistem pembayaran digital, QRIS, serta strategi Go Digital untuk UMKM Indonesia.",
     type: "website",
     url: `${appUrl}/program-support/artikel`,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Artikel UMKM Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Artikel & Panduan Pembayaran UMKM | Nusandana",
     description:
       "Kumpulan artikel, tips, dan panduan lengkap tentang penerapan sistem pembayaran digital, QRIS, serta strategi Go Digital untuk UMKM Indonesia.",
+    images: ["/og-image.jpg"],
   },
 };
 

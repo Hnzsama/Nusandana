@@ -24,12 +24,14 @@ export const metadata: Metadata = {
       "Solusi ekosistem produk penerimaan pembayaran terlengkap: Aplikasi QRIS Mobile, Website Dashboard Real-time, dan perangkat QRIS Soundbox Notifikasi Suara Nusandana.",
     type: "website",
     url: `${appUrl}/program-support`,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Support Product Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Support Product Hub & Ekosistem Layanan | Nusandana",
     description:
       "Solusi ekosistem produk penerimaan pembayaran terlengkap: Aplikasi QRIS Mobile, Website Dashboard Real-time, dan perangkat QRIS Soundbox Notifikasi Suara Nusandana.",
+    images: ["/og-image.jpg"],
   },
 };
 

@@ -23,12 +23,14 @@ export const metadata: Metadata = {
     description:
       "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, kepatuhan APPU PPT, dan sertifikasi keamanan transaksi digital PT Gerbang Pembayaran Digital (Nusandana).",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Lisensi Bank Indonesia Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lisensi Bank Indonesia & Keamanan Sistem | Nusandana",
     description:
       "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, kepatuhan APPU PPT, dan sertifikasi keamanan transaksi digital PT Gerbang Pembayaran Digital (Nusandana).",
+    images: ["/og-image.jpg"],
   },
 };
 

@@ -23,12 +23,14 @@ export const metadata: Metadata = {
     description:
       "Hubungi tim spesialis Nusandana untuk konsultasi gratis integrasi gerbang pembayaran digital, QRIS, Virtual Account, dan layanan customer care 24/7.",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Hubungi Nusandana" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Hubungi Kami & Layanan Support | Nusandana",
     description:
       "Hubungi tim spesialis Nusandana untuk konsultasi gratis integrasi gerbang pembayaran digital, QRIS, Virtual Account, dan layanan customer care 24/7.",
+    images: ["/og-image.jpg"],
   },
 };
 
