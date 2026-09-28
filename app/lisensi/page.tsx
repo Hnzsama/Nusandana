@@ -7,8 +7,29 @@ import CTASection from "@/components/CTASection";
 import { ShieldCheck, Lock, Award, FileCheck, CheckCircle2, Sparkles, ArrowRight, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Lisensi & Keamanan Sistem | Nusandana",
-  description: "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, ISO 27001, dan sertifikasi keamanan transaksi digital Nusandana.",
+  title: "Lisensi Bank Indonesia & Keamanan Sistem | Nusandana",
+  description:
+    "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, kepatuhan APPU PPT, dan sertifikasi keamanan transaksi digital PT Gerbang Pembayaran Digital (Nusandana).",
+  keywords: [
+    "Lisensi Bank Indonesia",
+    "PJP Bank Indonesia",
+    "PCI-DSS Level 1 Nusandana",
+    "Kepatuhan APPU PPT",
+    "Anggota ASPI Nusandana",
+    "Keamanan Payment Gateway",
+  ],
+  openGraph: {
+    title: "Lisensi Bank Indonesia & Keamanan Sistem | Nusandana",
+    description:
+      "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, kepatuhan APPU PPT, dan sertifikasi keamanan transaksi digital PT Gerbang Pembayaran Digital (Nusandana).",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lisensi Bank Indonesia & Keamanan Sistem | Nusandana",
+    description:
+      "Informasi lisensi resmi Bank Indonesia, PCI-DSS Level 1, kepatuhan APPU PPT, dan sertifikasi keamanan transaksi digital PT Gerbang Pembayaran Digital (Nusandana).",
+  },
 };
 
 const licenseItems = [

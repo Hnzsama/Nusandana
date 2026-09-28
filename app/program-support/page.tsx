@@ -5,14 +5,31 @@ import SupportProductSection from "@/components/program-support/SupportProductSe
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://nusandana.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Support Product | Nusandana",
-  description: "Dukungan produk terlengkap mencakup Aplikasi QRIS Mobile, Web Dashboard, dan QRIS Soundbox Nusandana.",
+  title: "Support Product Hub & Ekosistem Layanan | Nusandana",
+  description:
+    "Solusi ekosistem produk penerimaan pembayaran terlengkap: Aplikasi QRIS Mobile, Website Dashboard Real-time, dan perangkat QRIS Soundbox Notifikasi Suara Nusandana.",
+  keywords: [
+    "Aplikasi QRIS Nusandana",
+    "QRIS Soundbox Indonesia",
+    "Soundbox Notifikasi Suara QRIS",
+    "Dashboard Real-time QRIS",
+    "Ekosistem Support Product Nusandana",
+  ],
   openGraph: {
-    title: "Support Product | Nusandana",
-    description: "Dukungan produk terlengkap mencakup Aplikasi QRIS Mobile, Web Dashboard, dan QRIS Soundbox Nusandana.",
+    title: "Support Product Hub & Ekosistem Layanan | Nusandana",
+    description:
+      "Solusi ekosistem produk penerimaan pembayaran terlengkap: Aplikasi QRIS Mobile, Website Dashboard Real-time, dan perangkat QRIS Soundbox Notifikasi Suara Nusandana.",
     type: "website",
-    url: "https://nusandana.example.com/program-support",
+    url: `${appUrl}/program-support`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support Product Hub & Ekosistem Layanan | Nusandana",
+    description:
+      "Solusi ekosistem produk penerimaan pembayaran terlengkap: Aplikasi QRIS Mobile, Website Dashboard Real-time, dan perangkat QRIS Soundbox Notifikasi Suara Nusandana.",
   },
 };
 

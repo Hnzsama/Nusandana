@@ -4,11 +4,11 @@ import React from "react";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const mitraImages = [
-  { name: "Inter Supermarket", src: "/mitra/WhatsApp Image 2026-09-21 at 6.00.03 PM.jpeg" },
-  { name: "Level Supermarket", src: "/mitra/WhatsApp Image 2026-09-21 at 6.01.42 PM.jpeg" },
-  { name: "Hidayah Toserba 89", src: "/mitra/Gemini_Generated_Image_6csjfv6csjfv6csj.jfif" },
-  { name: "Gurad Store", src: "/mitra/Gemini_Generated_Image_9sn9cd9sn9cd9sn9.jfif" },
-  { name: "CRN 86", src: "/mitra/Gemini_Generated_Image_ru0oa4ru0oa4ru0o (1).jfif" },
+  { name: "Inter Supermarket", src: "/mitra/inter-supermarket.jpeg" },
+  { name: "Level Supermarket", src: "/mitra/level-supermarket.jpeg" },
+  { name: "Mie Ayam Bakso Arema 89", src: "/mitra/mie-ayam-arema.jfif" },
+  { name: "Guard Store", src: "/mitra/guard-store.jfif" },
+  { name: "CRN 86", src: "/mitra/crn-86.jfif" },
 ];
 
 export default function PartnerLogos() {

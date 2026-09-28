@@ -8,8 +8,28 @@ import CTASection from "@/components/CTASection";
 import { Handshake, ShieldCheck, Zap, ArrowRight, Code2, Building2, Users, CheckCircle2, Sparkles, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Kerja Sama & Program Kemitraan | Nusandana",
-  description: "Bergabung sebagai mitra strategis, reseller, atau partner integrasi payment gateway Nusandana.",
+  title: "Kerja Sama & Program Kemitraan Strategis | Nusandana",
+  description:
+    "Bergabunglah sebagai mitra perbankan, partner integrator POS/ERP, reseller, atau partner payment gateway Nusandana di Indonesia.",
+  keywords: [
+    "Program Kemitraan Payment Gateway",
+    "Mitra Integrator POS ERP",
+    "Reseller Payment Gateway Indonesia",
+    "Kerja Sama Nusandana",
+    "Partner Merchant Nusandana",
+  ],
+  openGraph: {
+    title: "Kerja Sama & Program Kemitraan Strategis | Nusandana",
+    description:
+      "Bergabunglah sebagai mitra perbankan, partner integrator POS/ERP, reseller, atau partner payment gateway Nusandana di Indonesia.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kerja Sama & Program Kemitraan Strategis | Nusandana",
+    description:
+      "Bergabunglah sebagai mitra perbankan, partner integrator POS/ERP, reseller, atau partner payment gateway Nusandana di Indonesia.",
+  },
 };
 
 const partnershipPrograms = [

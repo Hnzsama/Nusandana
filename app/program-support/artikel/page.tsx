@@ -4,9 +4,32 @@ import Footer from "@/components/Footer";
 import UMKMArticleSection from "@/components/program-support/UMKMArticleSection";
 import FAQSection from "@/components/FAQSection";
 
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://nusandana.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Artikel & Panduan Pembayaran UMKM | paymentapp",
-  description: "Artikel dan panduan lengkap tentang solusi sistem pembayaran digital untuk UMKM.",
+  title: "Artikel & Panduan Pembayaran UMKM | Nusandana",
+  description:
+    "Kumpulan artikel, tips, dan panduan lengkap tentang penerapan sistem pembayaran digital, QRIS, serta strategi Go Digital untuk UMKM Indonesia.",
+  keywords: [
+    "Artikel Pembayaran UMKM",
+    "Panduan QRIS UMKM",
+    "Tips Digitalisasi Usaha",
+    "Blog Nusandana",
+    "Edukasi FinTech Indonesia",
+  ],
+  openGraph: {
+    title: "Artikel & Panduan Pembayaran UMKM | Nusandana",
+    description:
+      "Kumpulan artikel, tips, dan panduan lengkap tentang penerapan sistem pembayaran digital, QRIS, serta strategi Go Digital untuk UMKM Indonesia.",
+    type: "website",
+    url: `${appUrl}/program-support/artikel`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Artikel & Panduan Pembayaran UMKM | Nusandana",
+    description:
+      "Kumpulan artikel, tips, dan panduan lengkap tentang penerapan sistem pembayaran digital, QRIS, serta strategi Go Digital untuk UMKM Indonesia.",
+  },
 };
 
 export default function ArtikelUMKMPage() {

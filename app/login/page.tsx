@@ -1,7 +1,30 @@
-"use client"
+import { Metadata } from "next";
+import Link from "next/link";
+import { LoginForm } from "@/components/login-form";
 
-import Link from "next/link"
-import { LoginForm } from "@/components/login-form"
+export const metadata: Metadata = {
+  title: "Masuk Akun Dashboard Merchant | Nusandana",
+  description:
+    "Masuk ke akun dashboard gerbang pembayaran digital Nusandana. Pantau transaksi real-time, settlement dana, dan laporan keuangan bisnis Anda.",
+  keywords: [
+    "Login Nusandana",
+    "Masuk Merchant Nusandana",
+    "Dashboard Payment Gateway",
+    "Portal Nusandana",
+  ],
+  openGraph: {
+    title: "Masuk Akun Dashboard Merchant | Nusandana",
+    description:
+      "Masuk ke akun dashboard gerbang pembayaran digital Nusandana. Pantau transaksi real-time, settlement dana, dan laporan keuangan bisnis Anda.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Masuk Akun Dashboard Merchant | Nusandana",
+    description:
+      "Masuk ke akun dashboard gerbang pembayaran digital Nusandana. Pantau transaksi real-time, settlement dana, dan laporan keuangan bisnis Anda.",
+  },
+};
 
 export default function LoginPage() {
   return (

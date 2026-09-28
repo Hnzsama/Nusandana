@@ -5,14 +5,32 @@ import PaymentsChannelMatrix from "@/components/payments/PaymentsChannelMatrix";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://nusandana.vercel.app";
+
 export const metadata: Metadata = {
   title: "Kanal Pembayaran & Matrix Integrasi | Nusandana",
-  description: "Terima pembayaran dari seluruh Virtual Account, QRIS, E-Wallet, Kartu Kredit, dan Retail Outlet Indonesia dalam satu SDK/API unified.",
+  description:
+    "Terima pembayaran dari seluruh Virtual Account, QRIS Instant, E-Wallet Direct, Kartu Kredit, dan Payment Links UMKM Indonesia dalam 1 API unified.",
+  keywords: [
+    "Kanal Pembayaran Nusandana",
+    "QRIS Instant Settlement",
+    "Virtual Account Multi Bank",
+    "E Wallet Gateway Indonesia",
+    "Payment Link UMKM Gratis",
+    "Matrix Integrasi Payment Gateway",
+  ],
   openGraph: {
     title: "Kanal Pembayaran & Matrix Integrasi | Nusandana",
-    description: "Terima pembayaran dari seluruh Virtual Account, QRIS, E-Wallet, Kartu Kredit, dan Retail Outlet Indonesia dalam satu SDK/API unified.",
+    description:
+      "Terima pembayaran dari seluruh Virtual Account, QRIS Instant, E-Wallet Direct, Kartu Kredit, dan Payment Links UMKM Indonesia dalam 1 API unified.",
     type: "website",
-    url: "https://nusandana.example.com/payments",
+    url: `${appUrl}/payments`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kanal Pembayaran & Matrix Integrasi | Nusandana",
+    description:
+      "Terima pembayaran dari seluruh Virtual Account, QRIS Instant, E-Wallet Direct, Kartu Kredit, dan Payment Links UMKM Indonesia dalam 1 API unified.",
   },
 };
 

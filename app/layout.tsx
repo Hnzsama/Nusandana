@@ -15,8 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://nusandana.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nusandana.co"),
+  metadataBase: new URL(appUrl),
   title: {
     default: "Nusandana - Payment Infrastructure 3.0",
     template: "%s | Nusandana",
@@ -32,11 +34,11 @@ export const metadata: Metadata = {
     "PCI-DSS Level 1",
     "Fintech Indonesia",
     "Transfer Massal Payouts",
-    "Gateway Pembayaran SCBD",
+    "Gerbang Pembayaran Batam",
   ],
-  authors: [{ name: "Nusandana", url: "https://nusandana.co" }],
-  creator: "PT Nusandana Digital Pembayaran",
-  publisher: "PT Nusandana Digital Pembayaran",
+  authors: [{ name: "Nusandana", url: appUrl }],
+  creator: "PT Gerbang Pembayaran Digital",
+  publisher: "PT Gerbang Pembayaran Digital",
   formatDetection: {
     telephone: false,
   },
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     title: "Nusandana - Payment Infrastructure 3.0",
     description:
       "Infrastruktur penerimaan pembayaran digital terdepan di Indonesia. Terima Virtual Account, QRIS, E-Wallet, dan Kartu Kredit dalam 1 API unified.",
-    url: "https://nusandana.co",
+    url: appUrl,
     siteName: "Nusandana",
     locale: "id_ID",
     type: "website",
@@ -100,9 +102,9 @@ export default function RootLayout({
     "@type": "FinancialService",
     name: "Nusandana",
     legalName: "PT Gerbang Pembayaran Digital",
-    url: "https://nusandana.co",
-    logo: "https://nusandana.co/logo.svg",
-    image: "https://nusandana.co/og-image.svg",
+    url: appUrl,
+    logo: `${appUrl}/logo.svg`,
+    image: `${appUrl}/og-image.svg`,
     description:
       "Infrastruktur penerimaan pembayaran digital dan payment gateway terdepan di Indonesia.",
     address: {

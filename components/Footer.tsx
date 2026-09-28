@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {/* Top Company Identity & Licensing Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 mb-12 border-b border-slate-900 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-8 items-start">
           
           {/* Brand & Address */}
           <div className="lg:col-span-5 space-y-4">
@@ -152,54 +152,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Footer Navigation Columns */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 mb-12">
-          {/* Produk */}
-          <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Produk</h4>
-            <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/payments" className="hover:text-red-400 transition-colors cursor-pointer">Metode Pembayaran</Link></li>
-              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Instant</Link></li>
-              <li><Link href="/payments?cat=qris-wallet" className="hover:text-red-400 transition-colors cursor-pointer">E-Wallet Direct</Link></li>
-              <li><Link href="/payments?cat=va" className="hover:text-red-400 transition-colors cursor-pointer">Virtual Account Multi-Bank</Link></li>
-              <li><Link href="/program-support/payment-links" className="hover:text-red-400 transition-colors cursor-pointer">Payment Links UMKM</Link></li>
-            </ul>
-          </div>
 
-          {/* Solusi */}
-          <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Support Product</h4>
-            <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer font-semibold text-red-400">Support Product Hub</Link></li>
-              <li><Link href="/program-support#aplikasi" className="hover:text-red-400 transition-colors cursor-pointer">Aplikasi QRIS Nusandana</Link></li>
-              <li><Link href="/program-support#website" className="hover:text-red-400 transition-colors cursor-pointer">Website QRIS Nusandana</Link></li>
-              <li><Link href="/program-support#soundbox" className="hover:text-red-400 transition-colors cursor-pointer">QRIS Soundbox Nusandana</Link></li>
-            </ul>
-          </div>
-
-          {/* Panduan */}
-          <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Panduan & Support</h4>
-            <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/program-support/artikel" className="hover:text-red-400 transition-colors cursor-pointer">Blog & Artikel UMKM</Link></li>
-              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Program Kemitraan</Link></li>
-              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Pusat Bantuan Customer Care</Link></li>
-              <li><Link href="/program-support" className="hover:text-red-400 transition-colors cursor-pointer">Tutorial Penggunaan App</Link></li>
-            </ul>
-          </div>
-
-          {/* Perusahaan & Legal */}
-          <div className="space-y-3">
-            <h4 className="font-bold text-white uppercase tracking-wider text-xs">Perusahaan</h4>
-            <ul className="space-y-2 font-medium text-slate-400">
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Tentang Nusandana</Link></li>
-              <li><Link href="/mitra" className="hover:text-red-400 transition-colors cursor-pointer">Kerja Sama Mitra</Link></li>
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Lisensi Bank Indonesia</Link></li>
-              <li><Link href="/kontak" className="hover:text-red-400 transition-colors cursor-pointer">Kontak & Alamat Kantor</Link></li>
-              <li><Link href="/lisensi" className="hover:text-red-400 transition-colors cursor-pointer">Kebijakan Privasi & Syarat</Link></li>
-            </ul>
-          </div>
-        </div>
 
         {/* Security & Licensing Copyright Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-wrap items-center justify-between gap-6">

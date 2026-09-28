@@ -1,12 +1,36 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Hubungi Kami & Layanan Support | Nusandana",
+  description:
+    "Hubungi tim spesialis Nusandana untuk konsultasi gratis integrasi gerbang pembayaran digital, QRIS, Virtual Account, dan layanan customer care 24/7.",
+  keywords: [
+    "Hubungi Nusandana",
+    "Customer Support Nusandana",
+    "Kontak Payment Gateway",
+    "Alamat PT Gerbang Pembayaran Digital",
+    "Konsultasi QRIS UMKM",
+  ],
+  openGraph: {
+    title: "Hubungi Kami & Layanan Support | Nusandana",
+    description:
+      "Hubungi tim spesialis Nusandana untuk konsultasi gratis integrasi gerbang pembayaran digital, QRIS, Virtual Account, dan layanan customer care 24/7.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hubungi Kami & Layanan Support | Nusandana",
+    description:
+      "Hubungi tim spesialis Nusandana untuk konsultasi gratis integrasi gerbang pembayaran digital, QRIS, Virtual Account, dan layanan customer care 24/7.",
+  },
+};
 
 export default function KontakPage() {
   return (

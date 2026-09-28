@@ -58,13 +58,11 @@ export default function CTASection() {
 
           {/* Right Image Feature with Fallback */}
           <div className="lg:col-span-5 relative cursor-pointer">
-            <div className="relative w-full h-[380px] rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-              <Image
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-slate-50 flex items-center justify-center p-1">
+              <img
                 src="/hero/hero-cta-banner.jpeg"
                 alt="Solusi Pembayaran Digital Nusandana"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover"
+                className="w-full h-auto max-h-[420px] object-contain rounded-xl"
               />
             </div>
           </div>

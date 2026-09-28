@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://nusandana.co";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://nusandana.vercel.app";
   const currentDate = new Date().toISOString();
 
   return [

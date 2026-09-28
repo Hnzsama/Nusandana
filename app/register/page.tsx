@@ -1,7 +1,31 @@
-"use client"
+import { Metadata } from "next";
+import Link from "next/link";
+import { RegisterForm } from "@/components/register-form";
 
-import Link from "next/link"
-import { RegisterForm } from "@/components/register-form"
+export const metadata: Metadata = {
+  title: "Registrasi Pendaftaran Merchant Gratis | Nusandana",
+  description:
+    "Daftar akun merchant Nusandana secara gratis. Mulai terima pembayaran QRIS Instant, Virtual Account Multi-Bank, dan E-Wallet tanpa biaya pendaftaran.",
+  keywords: [
+    "Daftar QRIS Gratis",
+    "Registrasi Merchant Nusandana",
+    "Pendaftaran Payment Gateway",
+    "Daftar QRIS UMKM Batam",
+    "Buat Akun Nusandana",
+  ],
+  openGraph: {
+    title: "Registrasi Pendaftaran Merchant Gratis | Nusandana",
+    description:
+      "Daftar akun merchant Nusandana secara gratis. Mulai terima pembayaran QRIS Instant, Virtual Account Multi-Bank, dan E-Wallet tanpa biaya pendaftaran.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Registrasi Pendaftaran Merchant Gratis | Nusandana",
+    description:
+      "Daftar akun merchant Nusandana secara gratis. Mulai terima pembayaran QRIS Instant, Virtual Account Multi-Bank, dan E-Wallet tanpa biaya pendaftaran.",
+  },
+};
 
 export default function RegisterPage() {
   return (
